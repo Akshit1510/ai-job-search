@@ -1,0 +1,747 @@
+{
+  ".agents/skills/freehire-search/cli/package.json": {
+    "mtime": 1785058940.4764798,
+    "ast_hash": "7802f8a37957ef52183c31bc23987a9c",
+    "semantic_hash": "7802f8a37957ef52183c31bc23987a9c"
+  },
+  ".agents/skills/freehire-search/cli/src/cli.ts": {
+    "mtime": 1785058940.4764798,
+    "ast_hash": "8f2f5dfb5ca71c8cfc4ea66972839548",
+    "semantic_hash": "8f2f5dfb5ca71c8cfc4ea66972839548"
+  },
+  ".agents/skills/freehire-search/cli/src/commands/detail.ts": {
+    "mtime": 1785058940.4774795,
+    "ast_hash": "5e2fc4ade7691df91ec7ac21228da610",
+    "semantic_hash": "5e2fc4ade7691df91ec7ac21228da610"
+  },
+  ".agents/skills/freehire-search/cli/src/commands/search.ts": {
+    "mtime": 1785058940.4774795,
+    "ast_hash": "fd0e4cebdcb2f9e62cc43e5811430e43",
+    "semantic_hash": "fd0e4cebdcb2f9e62cc43e5811430e43"
+  },
+  ".agents/skills/freehire-search/cli/src/helpers.ts": {
+    "mtime": 1785058940.4774795,
+    "ast_hash": "3e1e4cdca3375d0cab187243ec96df90",
+    "semantic_hash": "3e1e4cdca3375d0cab187243ec96df90"
+  },
+  ".agents/skills/freehire-search/cli/tests/cli-flag-validation.test.ts": {
+    "mtime": 1785058940.4774795,
+    "ast_hash": "15c0b4219e6948db17483fe3a376f000",
+    "semantic_hash": "15c0b4219e6948db17483fe3a376f000"
+  },
+  ".agents/skills/freehire-search/cli/tests/commands.test.ts": {
+    "mtime": 1785058940.4774795,
+    "ast_hash": "580496a949b4d5909e00793c759dd0c1",
+    "semantic_hash": "580496a949b4d5909e00793c759dd0c1"
+  },
+  ".agents/skills/freehire-search/cli/tests/helpers.ts": {
+    "mtime": 1785058940.4784799,
+    "ast_hash": "9dad71174bd7e4a61b49ddc28221ea48",
+    "semantic_hash": "9dad71174bd7e4a61b49ddc28221ea48"
+  },
+  ".agents/skills/freehire-search/cli/tests/parsing.test.ts": {
+    "mtime": 1785058940.4784799,
+    "ast_hash": "8cef0cf25c29e08edc7b671a5c8d7bdf",
+    "semantic_hash": "8cef0cf25c29e08edc7b671a5c8d7bdf"
+  },
+  ".agents/skills/freehire-search/cli/tests/request-timeout.test.ts": {
+    "mtime": 1785058940.4784799,
+    "ast_hash": "d05d7abffecef66cf4efe7bbfb6bb003",
+    "semantic_hash": "d05d7abffecef66cf4efe7bbfb6bb003"
+  },
+  ".agents/skills/freehire-search/cli/tsconfig.json": {
+    "mtime": 1785058940.4784799,
+    "ast_hash": "59ef79c35852e34ca138cd40d655cd05",
+    "semantic_hash": "59ef79c35852e34ca138cd40d655cd05"
+  },
+  ".agents/skills/jobbank-search/cli/package.json": {
+    "mtime": 1785058940.479474,
+    "ast_hash": "a4eadb3dd998688ed39b25145a13df52",
+    "semantic_hash": "a4eadb3dd998688ed39b25145a13df52"
+  },
+  ".agents/skills/jobbank-search/cli/src/cli.ts": {
+    "mtime": 1785058940.479474,
+    "ast_hash": "7c7282f3f90391923b2e2727123eaa70",
+    "semantic_hash": "7c7282f3f90391923b2e2727123eaa70"
+  },
+  ".agents/skills/jobbank-search/cli/src/commands/detail.ts": {
+    "mtime": 1785058940.479474,
+    "ast_hash": "bf0980e69ead410ae624b30e071a7e12",
+    "semantic_hash": "bf0980e69ead410ae624b30e071a7e12"
+  },
+  ".agents/skills/jobbank-search/cli/src/commands/search.ts": {
+    "mtime": 1785058940.479474,
+    "ast_hash": "e9bcba2a4dc14d5a0b7277d8c98b164c",
+    "semantic_hash": "e9bcba2a4dc14d5a0b7277d8c98b164c"
+  },
+  ".agents/skills/jobbank-search/cli/src/helpers.ts": {
+    "mtime": 1785058940.479474,
+    "ast_hash": "8f1c673143f51ac09ff7b72d339b6703",
+    "semantic_hash": "8f1c673143f51ac09ff7b72d339b6703"
+  },
+  ".agents/skills/jobbank-search/cli/tests/cli-contract.test.ts": {
+    "mtime": 1785058940.479474,
+    "ast_hash": "633d045fd3f9c5fecfff31fa094b9b3c",
+    "semantic_hash": "633d045fd3f9c5fecfff31fa094b9b3c"
+  },
+  ".agents/skills/jobbank-search/cli/tests/cli-flag-validation.test.ts": {
+    "mtime": 1785058940.4804747,
+    "ast_hash": "d0b232be80358691237fcd47037189eb",
+    "semantic_hash": "d0b232be80358691237fcd47037189eb"
+  },
+  ".agents/skills/jobbank-search/cli/tests/detail-jsonld.test.ts": {
+    "mtime": 1785058940.4804747,
+    "ast_hash": "2997385df2b02bfaf7caefd792e43d48",
+    "semantic_hash": "2997385df2b02bfaf7caefd792e43d48"
+  },
+  ".agents/skills/jobbank-search/cli/tests/helpers.ts": {
+    "mtime": 1785058940.4804747,
+    "ast_hash": "d09e02aa2ee6519adec252f7f85749ec",
+    "semantic_hash": "d09e02aa2ee6519adec252f7f85749ec"
+  },
+  ".agents/skills/jobbank-search/cli/tests/request-timeout.test.ts": {
+    "mtime": 1785058940.4804747,
+    "ast_hash": "8abd91bbd5a65abc218c596dac02a311",
+    "semantic_hash": "8abd91bbd5a65abc218c596dac02a311"
+  },
+  ".agents/skills/jobbank-search/cli/tests/rss-fetch.test.ts": {
+    "mtime": 1785058940.4804747,
+    "ast_hash": "72cc6e76921f1b91ce46de5dc621ac89",
+    "semantic_hash": "72cc6e76921f1b91ce46de5dc621ac89"
+  },
+  ".agents/skills/jobbank-search/cli/tests/rss-parsing.test.ts": {
+    "mtime": 1785058940.4804747,
+    "ast_hash": "3877c9ded2e898dc5176559dfc170ed0",
+    "semantic_hash": "3877c9ded2e898dc5176559dfc170ed0"
+  },
+  ".agents/skills/jobbank-search/cli/tsconfig.json": {
+    "mtime": 1785058940.4804747,
+    "ast_hash": "f0e9fe445b247d5cfb39f56adfcc2e89",
+    "semantic_hash": "f0e9fe445b247d5cfb39f56adfcc2e89"
+  },
+  ".agents/skills/jobdanmark-search/cli/package.json": {
+    "mtime": 1785058940.4814737,
+    "ast_hash": "0c7178c892ad0af38ba3ceb639fa5ab4",
+    "semantic_hash": "0c7178c892ad0af38ba3ceb639fa5ab4"
+  },
+  ".agents/skills/jobdanmark-search/cli/src/cli.ts": {
+    "mtime": 1785058940.4814737,
+    "ast_hash": "a0aaa6a21df16bd75510d9aea70648db",
+    "semantic_hash": "a0aaa6a21df16bd75510d9aea70648db"
+  },
+  ".agents/skills/jobdanmark-search/cli/src/commands/autocomplete.ts": {
+    "mtime": 1785058940.4814737,
+    "ast_hash": "c4e14f6880071b608ec0c072df51edc4",
+    "semantic_hash": "c4e14f6880071b608ec0c072df51edc4"
+  },
+  ".agents/skills/jobdanmark-search/cli/src/commands/categories.ts": {
+    "mtime": 1785058940.4814737,
+    "ast_hash": "dfa3e4368205cdae2719fb9bd7fb1b27",
+    "semantic_hash": "dfa3e4368205cdae2719fb9bd7fb1b27"
+  },
+  ".agents/skills/jobdanmark-search/cli/src/commands/detail.ts": {
+    "mtime": 1785058940.482481,
+    "ast_hash": "907c307a0ecb8de4b0fe13a27dfa55e7",
+    "semantic_hash": "907c307a0ecb8de4b0fe13a27dfa55e7"
+  },
+  ".agents/skills/jobdanmark-search/cli/src/commands/locations.ts": {
+    "mtime": 1785058940.482481,
+    "ast_hash": "900294201c4e3084837acb9efa8dd354",
+    "semantic_hash": "900294201c4e3084837acb9efa8dd354"
+  },
+  ".agents/skills/jobdanmark-search/cli/src/commands/search.ts": {
+    "mtime": 1785058940.482481,
+    "ast_hash": "ecc44f4b26a625c203e3bda2126c9767",
+    "semantic_hash": "ecc44f4b26a625c203e3bda2126c9767"
+  },
+  ".agents/skills/jobdanmark-search/cli/src/helpers.ts": {
+    "mtime": 1785058940.482481,
+    "ast_hash": "38303728f44fc35103d669bab987aded",
+    "semantic_hash": "38303728f44fc35103d669bab987aded"
+  },
+  ".agents/skills/jobdanmark-search/cli/tests/cli-contract.test.ts": {
+    "mtime": 1785058940.482481,
+    "ast_hash": "bcc22598b627df9cfaec6a2eead9d2ea",
+    "semantic_hash": "bcc22598b627df9cfaec6a2eead9d2ea"
+  },
+  ".agents/skills/jobdanmark-search/cli/tests/cli-flag-validation.test.ts": {
+    "mtime": 1785058940.482481,
+    "ast_hash": "46edcbfc56086f226634d9e1ca3ff02d",
+    "semantic_hash": "46edcbfc56086f226634d9e1ca3ff02d"
+  },
+  ".agents/skills/jobdanmark-search/cli/tests/detail-jsonld.test.ts": {
+    "mtime": 1785058940.482481,
+    "ast_hash": "5fe77d2b4b4332b75c37db6b61ff654f",
+    "semantic_hash": "5fe77d2b4b4332b75c37db6b61ff654f"
+  },
+  ".agents/skills/jobdanmark-search/cli/tests/detail-parsing.test.ts": {
+    "mtime": 1785058940.482481,
+    "ast_hash": "76732d675d07c1a1e6c0dda9ff9173bb",
+    "semantic_hash": "76732d675d07c1a1e6c0dda9ff9173bb"
+  },
+  ".agents/skills/jobdanmark-search/cli/tests/helpers.ts": {
+    "mtime": 1785058940.482481,
+    "ast_hash": "d09e02aa2ee6519adec252f7f85749ec",
+    "semantic_hash": "d09e02aa2ee6519adec252f7f85749ec"
+  },
+  ".agents/skills/jobdanmark-search/cli/tests/request-timeout.test.ts": {
+    "mtime": 1785058940.483474,
+    "ast_hash": "2dbdbfdb7904df2a19783554cbdbd7b8",
+    "semantic_hash": "2dbdbfdb7904df2a19783554cbdbd7b8"
+  },
+  ".agents/skills/jobdanmark-search/cli/tsconfig.json": {
+    "mtime": 1785058940.483474,
+    "ast_hash": "f0e9fe445b247d5cfb39f56adfcc2e89",
+    "semantic_hash": "f0e9fe445b247d5cfb39f56adfcc2e89"
+  },
+  ".agents/skills/jobindex-search/cli/package.json": {
+    "mtime": 1785058940.483474,
+    "ast_hash": "2c91fa175102379eee731051110881da",
+    "semantic_hash": "2c91fa175102379eee731051110881da"
+  },
+  ".agents/skills/jobindex-search/cli/src/cli.ts": {
+    "mtime": 1785058940.483474,
+    "ast_hash": "88bb2b3298652a2abaa191bece7e5c1f",
+    "semantic_hash": "88bb2b3298652a2abaa191bece7e5c1f"
+  },
+  ".agents/skills/jobindex-search/cli/src/commands/detail.ts": {
+    "mtime": 1785058940.483474,
+    "ast_hash": "e49fde237e97c333909bf40136403d1d",
+    "semantic_hash": "e49fde237e97c333909bf40136403d1d"
+  },
+  ".agents/skills/jobindex-search/cli/src/commands/search.ts": {
+    "mtime": 1785058940.4844737,
+    "ast_hash": "cffa372b5e31328b1359016957a6a9fd",
+    "semantic_hash": "cffa372b5e31328b1359016957a6a9fd"
+  },
+  ".agents/skills/jobindex-search/cli/src/helpers.ts": {
+    "mtime": 1785058940.4844737,
+    "ast_hash": "782986a9c2d65299b385479c39f8b062",
+    "semantic_hash": "782986a9c2d65299b385479c39f8b062"
+  },
+  ".agents/skills/jobindex-search/cli/tests/cli-contract.test.ts": {
+    "mtime": 1785058940.4844737,
+    "ast_hash": "4fac64bdee1622ca956b4b691a4710ba",
+    "semantic_hash": "4fac64bdee1622ca956b4b691a4710ba"
+  },
+  ".agents/skills/jobindex-search/cli/tests/cli-flag-validation.test.ts": {
+    "mtime": 1785058940.4844737,
+    "ast_hash": "d6b3f2321ab1ee339f33eca0138f8cd9",
+    "semantic_hash": "d6b3f2321ab1ee339f33eca0138f8cd9"
+  },
+  ".agents/skills/jobindex-search/cli/tests/helpers.ts": {
+    "mtime": 1785058940.4844737,
+    "ast_hash": "d09e02aa2ee6519adec252f7f85749ec",
+    "semantic_hash": "d09e02aa2ee6519adec252f7f85749ec"
+  },
+  ".agents/skills/jobindex-search/cli/tests/parsing.test.ts": {
+    "mtime": 1785058940.4844737,
+    "ast_hash": "f4af25243f5ae73d90371b9c76d93c4d",
+    "semantic_hash": "f4af25243f5ae73d90371b9c76d93c4d"
+  },
+  ".agents/skills/jobindex-search/cli/tests/request-timeout.test.ts": {
+    "mtime": 1785058940.4844737,
+    "ast_hash": "34531e909cbf1945badb733b5e3fd2be",
+    "semantic_hash": "34531e909cbf1945badb733b5e3fd2be"
+  },
+  ".agents/skills/jobindex-search/cli/tsconfig.json": {
+    "mtime": 1785058940.4844737,
+    "ast_hash": "f0e9fe445b247d5cfb39f56adfcc2e89",
+    "semantic_hash": "f0e9fe445b247d5cfb39f56adfcc2e89"
+  },
+  ".agents/skills/jobnet-search/cli/package.json": {
+    "mtime": 1785058940.4854734,
+    "ast_hash": "e4972cac5313f5177051855c8d6cb327",
+    "semantic_hash": "e4972cac5313f5177051855c8d6cb327"
+  },
+  ".agents/skills/jobnet-search/cli/src/cli.ts": {
+    "mtime": 1785058940.4854734,
+    "ast_hash": "1c1ce4a60d5f7542e98b797002488d91",
+    "semantic_hash": "1c1ce4a60d5f7542e98b797002488d91"
+  },
+  ".agents/skills/jobnet-search/cli/src/commands/detail.ts": {
+    "mtime": 1785058940.4854734,
+    "ast_hash": "d5ab362914552af888c771dc83379177",
+    "semantic_hash": "d5ab362914552af888c771dc83379177"
+  },
+  ".agents/skills/jobnet-search/cli/src/commands/occupations.ts": {
+    "mtime": 1785058940.4854734,
+    "ast_hash": "a55dc06bea6a45f5fe1ae552d98a7d47",
+    "semantic_hash": "a55dc06bea6a45f5fe1ae552d98a7d47"
+  },
+  ".agents/skills/jobnet-search/cli/src/commands/search.ts": {
+    "mtime": 1785058940.4854734,
+    "ast_hash": "5007b34ac2730cdfcb9c0427ada06a6c",
+    "semantic_hash": "5007b34ac2730cdfcb9c0427ada06a6c"
+  },
+  ".agents/skills/jobnet-search/cli/src/commands/suggestions.ts": {
+    "mtime": 1785058940.4854734,
+    "ast_hash": "c243ee1912fbd4a2804769513ca99e23",
+    "semantic_hash": "c243ee1912fbd4a2804769513ca99e23"
+  },
+  ".agents/skills/jobnet-search/cli/src/helpers.ts": {
+    "mtime": 1785058940.4864738,
+    "ast_hash": "08db1a8ab2d5252eb20f15302f181dbf",
+    "semantic_hash": "08db1a8ab2d5252eb20f15302f181dbf"
+  },
+  ".agents/skills/jobnet-search/cli/tests/cli-contract.test.ts": {
+    "mtime": 1785058940.4864738,
+    "ast_hash": "a3e615532aad8e38a983cdf1e513bf37",
+    "semantic_hash": "a3e615532aad8e38a983cdf1e513bf37"
+  },
+  ".agents/skills/jobnet-search/cli/tests/cli-flag-validation.test.ts": {
+    "mtime": 1785058940.4864738,
+    "ast_hash": "4653f3e3ce0c3c90efcf57c90a7df1b4",
+    "semantic_hash": "4653f3e3ce0c3c90efcf57c90a7df1b4"
+  },
+  ".agents/skills/jobnet-search/cli/tests/detail-formatting.test.ts": {
+    "mtime": 1785058940.4864738,
+    "ast_hash": "ac97515b6dcd2196f1de2d0ab48a6255",
+    "semantic_hash": "ac97515b6dcd2196f1de2d0ab48a6255"
+  },
+  ".agents/skills/jobnet-search/cli/tests/helpers.ts": {
+    "mtime": 1785058940.4864738,
+    "ast_hash": "d09e02aa2ee6519adec252f7f85749ec",
+    "semantic_hash": "d09e02aa2ee6519adec252f7f85749ec"
+  },
+  ".agents/skills/jobnet-search/cli/tests/request-timeout.test.ts": {
+    "mtime": 1785058940.4864738,
+    "ast_hash": "c54df8c511f9b773bfd68c5bc9e65d02",
+    "semantic_hash": "c54df8c511f9b773bfd68c5bc9e65d02"
+  },
+  ".agents/skills/jobnet-search/cli/tests/search-normalization.test.ts": {
+    "mtime": 1785058940.4864738,
+    "ast_hash": "9344ef736c00909a22359b1bfb022499",
+    "semantic_hash": "9344ef736c00909a22359b1bfb022499"
+  },
+  ".agents/skills/jobnet-search/cli/tsconfig.json": {
+    "mtime": 1785058940.4864738,
+    "ast_hash": "f0e9fe445b247d5cfb39f56adfcc2e89",
+    "semantic_hash": "f0e9fe445b247d5cfb39f56adfcc2e89"
+  },
+  ".agents/skills/linkedin-search/cli/package.json": {
+    "mtime": 1785058940.4874752,
+    "ast_hash": "2d743a22fe178404b58e030054df0ccf",
+    "semantic_hash": "2d743a22fe178404b58e030054df0ccf"
+  },
+  ".agents/skills/linkedin-search/cli/src/cli.ts": {
+    "mtime": 1785058940.4874752,
+    "ast_hash": "2433ea92ff7659e8d2ffaa8dad4ea362",
+    "semantic_hash": "2433ea92ff7659e8d2ffaa8dad4ea362"
+  },
+  ".agents/skills/linkedin-search/cli/src/commands/detail.ts": {
+    "mtime": 1785058940.4874752,
+    "ast_hash": "4fd2e849b374977ca14bf7e26d6e1695",
+    "semantic_hash": "4fd2e849b374977ca14bf7e26d6e1695"
+  },
+  ".agents/skills/linkedin-search/cli/src/commands/search.ts": {
+    "mtime": 1785058940.4874752,
+    "ast_hash": "f024c87c612248e7c0804255d1fb03ec",
+    "semantic_hash": "f024c87c612248e7c0804255d1fb03ec"
+  },
+  ".agents/skills/linkedin-search/cli/src/helpers.ts": {
+    "mtime": 1785058940.4874752,
+    "ast_hash": "fcbe67f90b7e67cede961cab50a61f97",
+    "semantic_hash": "fcbe67f90b7e67cede961cab50a61f97"
+  },
+  ".agents/skills/linkedin-search/cli/tests/cli-flag-validation.test.ts": {
+    "mtime": 1785058940.4874752,
+    "ast_hash": "73c621a088ccce80bb5154865fe325df",
+    "semantic_hash": "73c621a088ccce80bb5154865fe325df"
+  },
+  ".agents/skills/linkedin-search/cli/tests/helpers.ts": {
+    "mtime": 1785058940.488474,
+    "ast_hash": "d09e02aa2ee6519adec252f7f85749ec",
+    "semantic_hash": "d09e02aa2ee6519adec252f7f85749ec"
+  },
+  ".agents/skills/linkedin-search/cli/tests/parsing.test.ts": {
+    "mtime": 1785058940.488474,
+    "ast_hash": "e6813915e352bce58da4be4fcc7d5bde",
+    "semantic_hash": "e6813915e352bce58da4be4fcc7d5bde"
+  },
+  ".agents/skills/linkedin-search/cli/tests/request-timeout.test.ts": {
+    "mtime": 1785058940.488474,
+    "ast_hash": "25cf035ff30bc37cf82ea0d6657dc029",
+    "semantic_hash": "25cf035ff30bc37cf82ea0d6657dc029"
+  },
+  ".agents/skills/linkedin-search/cli/tests/search.test.ts": {
+    "mtime": 1785058940.488474,
+    "ast_hash": "c1f8d69955c4ed95bff27c40271aa0ba",
+    "semantic_hash": "c1f8d69955c4ed95bff27c40271aa0ba"
+  },
+  ".agents/skills/linkedin-search/cli/tsconfig.json": {
+    "mtime": 1785058940.488474,
+    "ast_hash": "59ef79c35852e34ca138cd40d655cd05",
+    "semantic_hash": "59ef79c35852e34ca138cd40d655cd05"
+  },
+  ".claude/settings.json": {
+    "mtime": 1785058940.4904795,
+    "ast_hash": "3f789c9ed5f94fdb91eea37744d80fb0",
+    "semantic_hash": "3f789c9ed5f94fdb91eea37744d80fb0"
+  },
+  "cover_letters/OpenFonts/cover.cls": {
+    "mtime": 1785058940.4944744,
+    "ast_hash": "61d5864835856bd6efd85c8134f4fd7f",
+    "semantic_hash": "61d5864835856bd6efd85c8134f4fd7f"
+  },
+  "cover_letters/cover.cls": {
+    "mtime": 1785058940.5074742,
+    "ast_hash": "6e4895473d6635655110173960884240",
+    "semantic_hash": "6e4895473d6635655110173960884240"
+  },
+  "salary_lookup.py": {
+    "mtime": 1785058940.5087912,
+    "ast_hash": "f1b31e89b449f0915822d90a25e89956",
+    "semantic_hash": "f1b31e89b449f0915822d90a25e89956"
+  },
+  "tests/__init__.py": {
+    "mtime": 1785058940.5087912,
+    "ast_hash": "81051bcc2cf1bedf378224b0a93e2877",
+    "semantic_hash": "81051bcc2cf1bedf378224b0a93e2877"
+  },
+  "tests/test_convert_salary_excel.py": {
+    "mtime": 1785058940.5087912,
+    "ast_hash": "626d3875e83f4a5fb0a1c237ac9db201",
+    "semantic_hash": "626d3875e83f4a5fb0a1c237ac9db201"
+  },
+  "tests/test_html_report_command.py": {
+    "mtime": 1785058940.5087912,
+    "ast_hash": "bb3b0feb8542e1a1755decc655d0b573",
+    "semantic_hash": "bb3b0feb8542e1a1755decc655d0b573"
+  },
+  "tests/test_lint_skills.py": {
+    "mtime": 1785058940.509797,
+    "ast_hash": "98b031387f29c3aaf88b786fb7c88fd5",
+    "semantic_hash": "98b031387f29c3aaf88b786fb7c88fd5"
+  },
+  "tests/test_notion_sync_command.py": {
+    "mtime": 1785058940.509797,
+    "ast_hash": "deb8b60dfc401354f9e35bab62df6537",
+    "semantic_hash": "deb8b60dfc401354f9e35bab62df6537"
+  },
+  "tests/test_outcome_followup.py": {
+    "mtime": 1785058940.509797,
+    "ast_hash": "df6e5c5c3871420655f2d64b3ad8b4d4",
+    "semantic_hash": "df6e5c5c3871420655f2d64b3ad8b4d4"
+  },
+  "tests/test_readme_assets.py": {
+    "mtime": 1785058940.509797,
+    "ast_hash": "2f5f6ad3ab9836fa0ebf93c03149c654",
+    "semantic_hash": "2f5f6ad3ab9836fa0ebf93c03149c654"
+  },
+  "tests/test_salary_lookup.py": {
+    "mtime": 1785058940.509797,
+    "ast_hash": "98abfd40fb5c2ab419fd739139b7c6a9",
+    "semantic_hash": "98abfd40fb5c2ab419fd739139b7c6a9"
+  },
+  "tests/test_security_guards.py": {
+    "mtime": 1785058940.509797,
+    "ast_hash": "bcb11da493fe7d5d36ce2ef00f3d6fb9",
+    "semantic_hash": "bcb11da493fe7d5d36ce2ef00f3d6fb9"
+  },
+  "tests/test_verify_pdf.py": {
+    "mtime": 1785058940.509797,
+    "ast_hash": "9e38383cc378caf86067453ec655bf91",
+    "semantic_hash": "9e38383cc378caf86067453ec655bf91"
+  },
+  "tools/check_framework_version.py": {
+    "mtime": 1785058940.5107965,
+    "ast_hash": "664275be96c0b5673248e610a5357b83",
+    "semantic_hash": "664275be96c0b5673248e610a5357b83"
+  },
+  "tools/check_upstream_updates.py": {
+    "mtime": 1785058940.5107965,
+    "ast_hash": "ed2d69d7535f907bb630d8357ad4a11a",
+    "semantic_hash": "ed2d69d7535f907bb630d8357ad4a11a"
+  },
+  "tools/convert_salary_excel.py": {
+    "mtime": 1785058940.5107965,
+    "ast_hash": "bd3226b9a1a98560ff74a304699a3c70",
+    "semantic_hash": "bd3226b9a1a98560ff74a304699a3c70"
+  },
+  "tools/lint_skills.py": {
+    "mtime": 1785058940.5107965,
+    "ast_hash": "9f4aab0f65f364d82ca2ebae810ae90d",
+    "semantic_hash": "9f4aab0f65f364d82ca2ebae810ae90d"
+  },
+  "tools/security_guards.py": {
+    "mtime": 1785058940.5107965,
+    "ast_hash": "04d1189cf596cf4ee8d02185fdfe1b95",
+    "semantic_hash": "04d1189cf596cf4ee8d02185fdfe1b95"
+  },
+  "tools/verify_pdf.py": {
+    "mtime": 1785058940.5107965,
+    "ast_hash": "5774c813c3618696d2d7d9c87a3efb67",
+    "semantic_hash": "5774c813c3618696d2d7d9c87a3efb67"
+  },
+  ".agents/skills/freehire-search/SKILL.md": {
+    "mtime": 1785058940.4764798,
+    "ast_hash": "c1947a26785870ec28432d6076fb21cd",
+    "semantic_hash": "c1947a26785870ec28432d6076fb21cd"
+  },
+  ".agents/skills/freehire-search/cli/README.md": {
+    "mtime": 1785058940.4764798,
+    "ast_hash": "2f610df6a76ae247140d847f311667f7",
+    "semantic_hash": "2f610df6a76ae247140d847f311667f7"
+  },
+  ".agents/skills/freehire-search/url-reference.md": {
+    "mtime": 1785058940.4784799,
+    "ast_hash": "6fd55a5b046583109f2fbec47b553944",
+    "semantic_hash": "6fd55a5b046583109f2fbec47b553944"
+  },
+  ".agents/skills/jobbank-search/SKILL.md": {
+    "mtime": 1785058940.4784799,
+    "ast_hash": "6e2d89e689e1d648ac87ccdb83fc3df7",
+    "semantic_hash": "6e2d89e689e1d648ac87ccdb83fc3df7"
+  },
+  ".agents/skills/jobbank-search/cli/README.md": {
+    "mtime": 1785058940.479474,
+    "ast_hash": "55e7adb53ef5313f1da876f8245231f2",
+    "semantic_hash": "55e7adb53ef5313f1da876f8245231f2"
+  },
+  ".agents/skills/jobbank-search/url-reference.md": {
+    "mtime": 1785058940.4804747,
+    "ast_hash": "80f3cbd0d568ff9d2909b18070bbd5eb",
+    "semantic_hash": "80f3cbd0d568ff9d2909b18070bbd5eb"
+  },
+  ".agents/skills/jobdanmark-search/SKILL.md": {
+    "mtime": 1785058940.4814737,
+    "ast_hash": "a6cfeff0795024956606fcdd36fe2f89",
+    "semantic_hash": "a6cfeff0795024956606fcdd36fe2f89"
+  },
+  ".agents/skills/jobdanmark-search/cli/README.md": {
+    "mtime": 1785058940.4814737,
+    "ast_hash": "3e1d65ce81d0f02d5cf13f96778664c6",
+    "semantic_hash": "3e1d65ce81d0f02d5cf13f96778664c6"
+  },
+  ".agents/skills/jobindex-search/SKILL.md": {
+    "mtime": 1785058940.483474,
+    "ast_hash": "562719de53cfb0c4d4c23492e660b881",
+    "semantic_hash": "562719de53cfb0c4d4c23492e660b881"
+  },
+  ".agents/skills/jobindex-search/cli/README.md": {
+    "mtime": 1785058940.483474,
+    "ast_hash": "be86b215e817a15c0655aa24639a0efe",
+    "semantic_hash": "be86b215e817a15c0655aa24639a0efe"
+  },
+  ".agents/skills/jobindex-search/url-reference.md": {
+    "mtime": 1785058940.4844737,
+    "ast_hash": "640a9ff03121eb07cc29acdb542d743c",
+    "semantic_hash": "640a9ff03121eb07cc29acdb542d743c"
+  },
+  ".agents/skills/jobnet-search/SKILL.md": {
+    "mtime": 1785058940.4854734,
+    "ast_hash": "c57406b85f5680b3cb87c26f357d6aff",
+    "semantic_hash": "c57406b85f5680b3cb87c26f357d6aff"
+  },
+  ".agents/skills/jobnet-search/cli/README.md": {
+    "mtime": 1785058940.4854734,
+    "ast_hash": "937057eec90f21b61345d1e53e9c192e",
+    "semantic_hash": "937057eec90f21b61345d1e53e9c192e"
+  },
+  ".agents/skills/linkedin-search/SKILL.md": {
+    "mtime": 1785058940.4874752,
+    "ast_hash": "3a639262f5d66736faff6d0baf241922",
+    "semantic_hash": "3a639262f5d66736faff6d0baf241922"
+  },
+  ".agents/skills/linkedin-search/cli/README.md": {
+    "mtime": 1785058940.4874752,
+    "ast_hash": "58b2e81b51133907fd44f7f381c14b09",
+    "semantic_hash": "58b2e81b51133907fd44f7f381c14b09"
+  },
+  ".agents/skills/linkedin-search/url-reference.md": {
+    "mtime": 1785058940.488474,
+    "ast_hash": "08453960e628daef9eba12615a231a80",
+    "semantic_hash": "08453960e628daef9eba12615a231a80"
+  },
+  ".claude/agents/gemini-research-expert.md": {
+    "mtime": 1785058940.488474,
+    "ast_hash": "5da50f974ab2053fa6fadd75b280cf09",
+    "semantic_hash": "5da50f974ab2053fa6fadd75b280cf09"
+  },
+  ".claude/commands/add-portal.md": {
+    "mtime": 1785058940.488474,
+    "ast_hash": "2370cfbf73eb8d33419ca45d7d293e07",
+    "semantic_hash": "2370cfbf73eb8d33419ca45d7d293e07"
+  },
+  ".claude/commands/add-template.md": {
+    "mtime": 1785058940.4894807,
+    "ast_hash": "7ebce7740dcc66a707d2b14143b04369",
+    "semantic_hash": "7ebce7740dcc66a707d2b14143b04369"
+  },
+  ".claude/commands/apply.md": {
+    "mtime": 1785058940.4894807,
+    "ast_hash": "94884d39a375f050b917cd4043622323",
+    "semantic_hash": "94884d39a375f050b917cd4043622323"
+  },
+  ".claude/commands/expand.md": {
+    "mtime": 1785058940.4894807,
+    "ast_hash": "19498e01683449851d2f76558dd1162b",
+    "semantic_hash": "19498e01683449851d2f76558dd1162b"
+  },
+  ".claude/commands/gmail-sync.md": {
+    "mtime": 1785058940.4894807,
+    "ast_hash": "d1e307032ca34fe2673153893112462d",
+    "semantic_hash": "d1e307032ca34fe2673153893112462d"
+  },
+  ".claude/commands/html-report.md": {
+    "mtime": 1785058940.4894807,
+    "ast_hash": "bf450157bfa1948475e8a3f8cd92faa7",
+    "semantic_hash": "bf450157bfa1948475e8a3f8cd92faa7"
+  },
+  ".claude/commands/interview.md": {
+    "mtime": 1785058940.4894807,
+    "ast_hash": "849fec931965905b194d34308fbeab16",
+    "semantic_hash": "849fec931965905b194d34308fbeab16"
+  },
+  ".claude/commands/notion-sync.md": {
+    "mtime": 1785058940.4904795,
+    "ast_hash": "caa594f0d6f27fc842e0f5c0ac210b7d",
+    "semantic_hash": "caa594f0d6f27fc842e0f5c0ac210b7d"
+  },
+  ".claude/commands/outcome.md": {
+    "mtime": 1785058940.4904795,
+    "ast_hash": "bbd359b5793776a5f504b9b9619ec4be",
+    "semantic_hash": "bbd359b5793776a5f504b9b9619ec4be"
+  },
+  ".claude/commands/rank.md": {
+    "mtime": 1785058940.4904795,
+    "ast_hash": "e8de3a982fdfc2219b3ef343d8715697",
+    "semantic_hash": "e8de3a982fdfc2219b3ef343d8715697"
+  },
+  ".claude/commands/reset.md": {
+    "mtime": 1785058940.4904795,
+    "ast_hash": "0f1fa59aa81c934b8d87a596ea1d0360",
+    "semantic_hash": "0f1fa59aa81c934b8d87a596ea1d0360"
+  },
+  ".claude/commands/setup.md": {
+    "mtime": 1785058940.4904795,
+    "ast_hash": "e7c6c746ca26bf1b5c31a03bd849e7e2",
+    "semantic_hash": "e7c6c746ca26bf1b5c31a03bd849e7e2"
+  },
+  ".claude/skills/job-application-assistant/01-candidate-profile.md": {
+    "mtime": 1785058940.4904795,
+    "ast_hash": "dc7ba367b70cf7ae76bdb9caf7a464b6",
+    "semantic_hash": "dc7ba367b70cf7ae76bdb9caf7a464b6"
+  },
+  ".claude/skills/job-application-assistant/02-behavioral-profile.md": {
+    "mtime": 1785058940.4904795,
+    "ast_hash": "f2d5f280583796208fba3e8c93bedf1f",
+    "semantic_hash": "f2d5f280583796208fba3e8c93bedf1f"
+  },
+  ".claude/skills/job-application-assistant/03-writing-style.md": {
+    "mtime": 1785058940.4914792,
+    "ast_hash": "e1746d787c8e3e9a6aef1326b11a5fa3",
+    "semantic_hash": "e1746d787c8e3e9a6aef1326b11a5fa3"
+  },
+  ".claude/skills/job-application-assistant/04-job-evaluation.md": {
+    "mtime": 1785058940.4914792,
+    "ast_hash": "88c0c61bee29642bba457711190899f5",
+    "semantic_hash": "88c0c61bee29642bba457711190899f5"
+  },
+  ".claude/skills/job-application-assistant/05-cv-templates.md": {
+    "mtime": 1785058940.4914792,
+    "ast_hash": "3101cf5bead5614233608cf2e0476f04",
+    "semantic_hash": "3101cf5bead5614233608cf2e0476f04"
+  },
+  ".claude/skills/job-application-assistant/06-cover-letter-templates.md": {
+    "mtime": 1785058940.4914792,
+    "ast_hash": "75ef0ecbbf9626fd3d27b153fd0d367f",
+    "semantic_hash": "75ef0ecbbf9626fd3d27b153fd0d367f"
+  },
+  ".claude/skills/job-application-assistant/07-interview-prep.md": {
+    "mtime": 1785058940.4914792,
+    "ast_hash": "0951d9bfb342444adcbf340b269d7bef",
+    "semantic_hash": "0951d9bfb342444adcbf340b269d7bef"
+  },
+  ".claude/skills/job-application-assistant/SKILL.md": {
+    "mtime": 1785058940.4914792,
+    "ast_hash": "8d1e3204ad152155f072b197cdb4735c",
+    "semantic_hash": "8d1e3204ad152155f072b197cdb4735c"
+  },
+  ".claude/skills/job-scraper/SKILL.md": {
+    "mtime": 1785058940.4914792,
+    "ast_hash": "e7f27c85c108f61731eff1b0c03be61b",
+    "semantic_hash": "e7f27c85c108f61731eff1b0c03be61b"
+  },
+  ".claude/skills/job-scraper/search-queries.md": {
+    "mtime": 1785058940.4924793,
+    "ast_hash": "c22fbd103ba97f465ee29743719bfd4c",
+    "semantic_hash": "c22fbd103ba97f465ee29743719bfd4c"
+  },
+  ".claude/skills/upskill/SKILL.md": {
+    "mtime": 1785058940.4924793,
+    "ast_hash": "fcdcba69b1e73a5b58258e1698ffa164",
+    "semantic_hash": "fcdcba69b1e73a5b58258e1698ffa164"
+  },
+  ".github/FUNDING.yml": {
+    "mtime": 1785058940.4924793,
+    "ast_hash": "34911e37f8cf87e153a94dc342e12c05",
+    "semantic_hash": "34911e37f8cf87e153a94dc342e12c05"
+  },
+  ".github/PULL_REQUEST_TEMPLATE.md": {
+    "mtime": 1785058940.4924793,
+    "ast_hash": "9230a522e8d62e4a78687118667b3495",
+    "semantic_hash": "9230a522e8d62e4a78687118667b3495"
+  },
+  ".github/workflows/ci.yml": {
+    "mtime": 1785058940.4924793,
+    "ast_hash": "fc62735552b1cea7cb61a052aa7c7ce8",
+    "semantic_hash": "fc62735552b1cea7cb61a052aa7c7ce8"
+  },
+  "AGENTS.md": {
+    "mtime": 1785058940.4924793,
+    "ast_hash": "fe60d3d4f2996b55415e3abd34567f8a",
+    "semantic_hash": "fe60d3d4f2996b55415e3abd34567f8a"
+  },
+  "CHANGELOG.md": {
+    "mtime": 1785058940.4934802,
+    "ast_hash": "c0e969aa2ea754272768b65e3141dba0",
+    "semantic_hash": "c0e969aa2ea754272768b65e3141dba0"
+  },
+  "CLAUDE.md": {
+    "mtime": 1785058940.4934802,
+    "ast_hash": "81bbc16aa36f2b6aad1c13edf219ef86",
+    "semantic_hash": "81bbc16aa36f2b6aad1c13edf219ef86"
+  },
+  "CONTRIBUTING.md": {
+    "mtime": 1785058940.4934802,
+    "ast_hash": "3476c12f2ece73b4b7f551e6afbcdd0a",
+    "semantic_hash": "3476c12f2ece73b4b7f551e6afbcdd0a"
+  },
+  "README.md": {
+    "mtime": 1785058940.4934802,
+    "ast_hash": "e340a3e5e1810c419dcc9342a7ce2c62",
+    "semantic_hash": "e340a3e5e1810c419dcc9342a7ce2c62"
+  },
+  "SECURITY.md": {
+    "mtime": 1785058940.4934802,
+    "ast_hash": "ac81cd3197486776f0db242205f213e4",
+    "semantic_hash": "ac81cd3197486776f0db242205f213e4"
+  },
+  "SETUP.md": {
+    "mtime": 1785058940.4934802,
+    "ast_hash": "a38cd608cacc06bdef33cb306b100316",
+    "semantic_hash": "a38cd608cacc06bdef33cb306b100316"
+  },
+  "documents/README.md": {
+    "mtime": 1785058940.5074742,
+    "ast_hash": "fd79afa54b524aed4e1af60bdd23faf8",
+    "semantic_hash": "fd79afa54b524aed4e1af60bdd23faf8"
+  },
+  "templates/README.md": {
+    "mtime": 1785058940.5087912,
+    "ast_hash": "cdae0fde5f7115e677f42d8db9dee021",
+    "semantic_hash": "cdae0fde5f7115e677f42d8db9dee021"
+  },
+  "tools/README_SALARY_TOOL.md": {
+    "mtime": 1785058940.509797,
+    "ast_hash": "ffd77a1137d076685fee5b323e94e3d6",
+    "semantic_hash": "ffd77a1137d076685fee5b323e94e3d6"
+  },
+  "assets/mascot/pip_flight_loop.gif": {
+    "mtime": 1785058940.4944744,
+    "ast_hash": "c091eec7248bdc6558eaa3bd8d7d99d4",
+    "semantic_hash": "c091eec7248bdc6558eaa3bd8d7d99d4"
+  }
+}

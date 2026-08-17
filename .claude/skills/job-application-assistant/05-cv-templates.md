@@ -10,14 +10,14 @@ framework_version: 1.2.1
 
 All CVs use the moderncv LaTeX package with the "banking" style and "blue" color scheme.
 
-**Output file:** `cv/main_<company>_<role>.tex`
+**Output file:** `out/applications/<company>_<role>/main_<company>_<role>.tex` — **each application gets its own folder holding both its CV and its cover letter.** Never write a tailored CV into `cv/`, which holds only the master template. `moderncv` is a system package, so the CV needs no local assets.
 **Compile with:** **lualatex** on MiKTeX/TeX Live. pdflatex often fails on modern MiKTeX installs with `fontawesome5` font-expansion errors; lualatex handles the same sources cleanly.
 **Master reference:** `cv/main_example.tex` (comprehensive CV with all competencies, experience, and achievements - use as source when building targeted CVs)
 
 ### Compile command
 
 ```bash
-cd cv && lualatex -interaction=nonstopmode main_<company>_<role>.tex
+cd out/applications/<company>_<role> && lualatex -interaction=nonstopmode main_<company>_<role>.tex
 ```
 
 Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. Any page count other than 2 is a failure that must be fixed before presenting to the user.
@@ -65,7 +65,9 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 % 4. Professional Experience section
 % 5. Selected Publications (if applicable)
 % 6. Honors and Awards (if applicable)
-% 7. References
+%
+% NOTE: no References section. Akshit has opted to omit it entirely - do not add
+% a References section and do not add an "Available upon request." line.
 
 \end{document}
 ```
@@ -102,7 +104,7 @@ Two related patterns are fine and should be kept:
 
 ### Section headings must match the CV's language (important)
 
-Section headings such as `\section{Core Competencies}`, `Professional Experience`, `Education`, `Languages`, `Publications`, `Honors and Awards`, `References` (and any others your template defines), plus the `Available upon request.` line under References, are all **literal English text baked into the template** - they do not translate themselves. Whenever the CV language (see `CV language` in the candidate profile) is not English, translate every one of these too, whatever they are, not just the body prose - a CV with a fully localized profile statement and bullets sitting under untouched English section headers reads as sloppy and inconsistent, and it's an easy thing to forget precisely because the prose translation is the obvious, visible part of the job. Worked example for Spanish: `Competencias Clave`, `Experiencia Profesional`, `Educaci\'on`, `Idiomas`, `Publicaciones`, `Distinciones y Premios`, `Referencias`, `Disponibles a solicitud.` The same rule applies for any other target language - check this explicitly during the verification pass.
+Section headings such as `\section{Core Competencies}`, `Professional Experience`, `Education`, `Languages`, `Publications`, `Honors and Awards` (and any others your template defines) are all **literal English text baked into the template** - they do not translate themselves. Whenever the CV language (see `CV language` in the candidate profile) is not English, translate every one of these too, whatever they are, not just the body prose - a CV with a fully localized profile statement and bullets sitting under untouched English section headers reads as sloppy and inconsistent, and it's an easy thing to forget precisely because the prose translation is the obvious, visible part of the job. Worked example for Spanish: `Competencias Clave`, `Experiencia Profesional`, `Educaci\'on`, `Idiomas`, `Publicaciones`, `Distinciones y Premios`. The same rule applies for any other target language - check this explicitly during the verification pass.
 
 ## Section-by-Section Tailoring
 
@@ -115,12 +117,24 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 
 **Create 2-3 profile statement templates for your main role types:**
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+<!-- Populated by /setup (Path B) on 2026-07-26. Adapt per posting - never paste verbatim. -->
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For AI / LLM / GenAI Engineer roles:**
+> Backend engineer with 3 years at Deutsche Bank building production AI systems on top of enterprise data. Designed and shipped an internal RAG chatbot serving employee queries across thousands of Confluence pages and documents - owning the full path from multi-format ingestion (PDF, Word, Excel, OCR'd images) through pgvector embedding pipelines to hybrid retrieval with multi-query retrievers and cross-encoders. Cut ingestion time 40-50% through multithreading and resolved embedding-corruption failures that were destabilizing the pipeline. Built a natural-language-to-SQL generator on LangGraph and LangChain for complex bank-specific queries. Strong Python and FastAPI, with the deployment discipline (Docker, OpenShift, Jenkins, GCP, Pytest) to keep LLM systems running rather than demoing.
+
+**For Backend / SDE-II roles:**
+> Associate/SDE-II at Deutsche Bank with 3 years building high-throughput backend systems in regulated banking, promoted early into the top 30% of employees. Led the backend of a regulatory trade-exception platform in Java, Kotlin, and Spring Boot, designing scalable REST APIs and cutting request latency 30-40%, application load 30%, and SQL query time ~35% under peak load. Owns releases end to end across Jenkins, TeamCity, OpenShift, and Linux. Google Cloud certified, with a second track in production AI - LangChain, LangGraph, and RAG systems built and deployed inside the bank.
+
+**For Full-Stack Engineer roles:**
+> Full-stack engineer with 3 years at Deutsche Bank spanning Java/Kotlin/Spring Boot and Python/FastAPI backends through Vue.js and TypeScript frontends. Led the backend of a regulatory trade-exception platform serving a Vue/TypeScript client, and independently built an internal AI chatbot end to end - Python and LangChain services behind a user-facing UI, deployed on Docker, OpenShift, and GCP. Currently building a FastAPI + React resume-optimization platform with GPU-accelerated LLM inference. Comfortable owning a feature from API design through deployment and monitoring.
+
+**Framing rules specific to this profile:**
+- **Say "3 years", not "over 2 years".** The source CV predates the current date; Aug 2023 to now is 3 years.
+- **The two Deutsche Bank roles are one employer, two levels.** Present as a single company block with the promotion visible - the early promotion is a credibility asset, not a formatting problem.
+- **Be precise about POC vs. production.** The RAG chatbot shipped internally; the NL-to-SQL generator was a POC. Never blur this.
+- **Numbers are the strongest asset.** 30-40% faster requests, 30% lower load, ~35% faster SQL, 40-50% faster ingestion. Lead with whichever matches the posting.
+- **The personal project carries AWS/Azure, React, and CUDA/FP16.** These are genuine but personal-project-only - label them as a project, never as work experience.
+- **Mention Claude Code by name** wherever agentic coding or AI-assisted development is relevant to the posting.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 
@@ -158,10 +172,8 @@ Wherever the CV names a verifiable artifact - a public project, a hackathon entr
 ### Honors and Awards
 - Keep format brief, one line each
 
-### References
-- List 2-4 references with name, title, company, and contact
-- End with: "More references are available upon request."
-- **Do not attach reference letters** - employers typically contact references directly
+### References - omitted
+Akshit has opted to omit References from CVs entirely. **Do not add a References section, and do not add an "Available upon request." line** - a placeholder line spends space to say nothing. If an employer explicitly asks for referees, supply them separately rather than reinstating the section.
 
 ## Compile-and-Inspect Loop (MANDATORY)
 
@@ -198,7 +210,7 @@ Restore the highest-relevance item that was previously cut — a CV that ends mi
 Most employers run CVs through an ATS before a human sees them, and the ATS reads the PDF's embedded **text layer**, not the rendered page. A CV can pass visual inspection and still extract as garbage. After the layout passes the compile-and-inspect loop, verify the text layer:
 
 ```bash
-cd cv && pdftotext -layout main_<company>_<role>.pdf main_<company>_<role>.txt
+cd out/applications/<company>_<role> && pdftotext -layout main_<company>_<role>.pdf main_<company>_<role>.txt
 ```
 
 `pdftotext` comes from [poppler](https://poppler.freedesktop.org/), not the TeX distribution - it is an **optional** dependency. If it is not installed, skip the mechanical check with a warning and rely on the visual PDF read for keyword coverage.
@@ -224,7 +236,6 @@ The CV **must** fit on exactly 2 pages when compiled. Use these content limits a
 | Education | 2-3 entries |
 | Publications | 2-3 entries |
 | Awards | 3 entries, single line each |
-| References | "Available upon request." (single line) |
 
 **If in doubt, cut rather than squeeze.** Reducing `\vspace` or geometry scale to force-fit content makes the CV look cramped.
 
@@ -266,7 +277,6 @@ The section order varies by role type:
 4. Education (reverse chronological)
 5. Languages
 6. Publications & Awards
-7. References
 
 **For domain-specific / specialist roles:**
 1. Profile statement / elevator pitch
@@ -274,4 +284,3 @@ The section order varies by role type:
 3. Education (reverse chronological) - credentials are a key qualifier
 4. Professional Experience (reverse chronological)
 5. Publications & Awards
-6. References

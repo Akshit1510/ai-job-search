@@ -1,10 +1,16 @@
-%% Example CV - [YOUR_NAME]
+%% Master CV - Akshit Maheshwari
 %% Comprehensive overview of all competencies, experience, and achievements.
-%% Use as a master reference when tailoring role-specific CVs.
+%% Use as a master reference when tailoring role-specific CVs (cv/main_<company>_<role>.tex).
 %%
-%% SETUP: Run /setup to populate this with your actual information.
+%% Populated by /setup (Path B) on 2026-07-26 from documents/cv/akshit_lanngraph.pdf
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
+%%
+%% LinkedIn URL below was recovered from the source PDF's link annotation and confirmed
+%% by the user on 2026-08-11. GitHub URL supplied by the user on 2026-08-11.
+%%
+%% No References section by user preference - do not re-add one, and do not add an
+%% "Available upon request." line.
 
 \documentclass[11pt,a4paper,sans]{moderncv}
 \moderncvstyle{banking}
@@ -18,24 +24,25 @@
 \renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
 
 \usepackage[utf8]{inputenc}
+\usepackage{needspace}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Akshit Maheshwari - CV},
     pdfpagemode=FullScreen,
 }
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Akshit}{Maheshwari}
+\address{Pune, Maharashtra, India}{}{}
+\phone[mobile]{+91 79868 64550}
+\email{akshitmaheshwari15102001@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/akshitmaheshwari}{LinkedIn} \quad \href{https://github.com/Akshit1510}{GitHub}}
 
 \begin{document}
 
@@ -46,7 +53,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Backend engineer with 3 years at Deutsche Bank building high-throughput enterprise systems and production AI. Promoted early to Associate/SDE-II (top 30\% of employees). Leads the backend of a regulatory trade-exception platform in Java, Kotlin, and Spring Boot, cutting request latency 30--40\% and SQL query time \textasciitilde35\% at peak load. Independently designed and shipped an internal RAG chatbot over thousands of Confluence pages --- owning multi-format ingestion, pgvector embedding pipelines, and hybrid retrieval end to end. Google Cloud certified, with deployment ownership across Docker, OpenShift, Jenkins, and GCP.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -56,15 +63,17 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Backend \& API Development}: Python, Java, Kotlin, C++; Spring Boot, FastAPI; REST API design, microservices architecture, scalable high-throughput backend systems.
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{AI, LLM \& RAG Systems}: Generative AI and Large Language Models; LangChain, LangGraph, OpenAI APIs, Hugging Face Transformers; Retrieval-Augmented Generation, hybrid retrieval, multi-query retrievers, cross-encoders; prompt engineering, embeddings, pgvector semantic search.
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{DevOps, Cloud \& CI/CD}: Docker, Kubernetes, OpenShift, Jenkins, TeamCity, Linux; CI/CD pipelines and release ownership; cloud-native deployment on Google Cloud Platform (Associate Cloud Engineer certified).
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Performance Engineering}: Caching strategy, request-flow optimization, SQL query tuning, multithreaded data pipelines, production profiling and debugging.
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Testing \& Engineering Practices}: Pytest, automated testing, test-driven development, schema validation with Pydantic, logging and monitoring, Git/GitHub, Agile; agentic development with Claude Code.
+
+\item \textbf{Domain}: Enterprise banking software, regulatory compliance systems, data ingestion and processing pipelines, semantic search, AI-driven decision support.
 
 \end{itemize}
 
@@ -76,32 +85,46 @@
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY--Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% --- Current Role ---
+\needspace{5\baselineskip}
+\item{\cventry{Oct 2025--Present}{Associate / SDE-II}{Deutsche Bank}{Pune, India}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1 - be specific, use numbers where possible]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
-    \item [Achievement or responsibility 4]
+    \item Led the backend of a regulatory trade-exception platform built with Java, Kotlin, Spring Boot, and Gradle alongside a Vue.js/TypeScript frontend; designed scalable REST APIs for high-throughput banking workflows.
+    \item Improved system performance through caching and optimized request flows (30--40\% faster), reduced application load by 30\%, and optimized SQL queries (\textasciitilde35\% faster) for peak load.
+    \item Owned releases and CI/CD pipelines across Jenkins, TeamCity, OpenShift, and Linux, delivering stable deployments with minimal production issues.
+    \item Developed AI proofs of concept including a natural-language-to-SQL generator using LangGraph, LangChain, LLMs, and Python, automating complex bank-specific queries.
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% --- Previous Role (same employer) ---
+\needspace{5\baselineskip}
+\item{\cventry{Aug 2023--Sep 2025}{Analyst / SDE-I}{Deutsche Bank}{Pune, India}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
+    \item Built an internal enterprise chatbot using Python, LangChain, Hugging Face LLMs, and a Streamlit UI, answering employee queries across thousands of Confluence pages and documents.
+    \item Built data ingestion pipelines extracting and normalizing content from Confluence, PDF, Word, Excel, and image sources, including a reusable OCR and image-indexing framework for visual document retrieval.
+    \item Cut ingestion and indexing time by \textasciitilde40--50\% through multithreading, and diagnosed and resolved embedding-corruption issues to stabilize the pipeline at scale.
+    \item Improved LLM response quality via prompt engineering and hybrid RAG frameworks (multi-query retrievers, cross-encoders); added Pytest coverage with CI/CD deployment on Docker, OpenShift, Jenkins, and Google Cloud.
+    \item Built and optimized embedding pipelines backed by pgvector, enabling hybrid retrieval and high-relevance LLM responses.
 \end{itemize}}}
 
-\vspace{3pt}
+\end{itemize}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% ============================================================
+%     PROJECTS
+% ============================================================
+
+\section{Projects}
+\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
+
+\needspace{4\baselineskip}
+\item{\cventry{Oct 2025--Present}{AI-Driven Resume Optimization \& Job Matching Platform}{Personal Project}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Designed a modular, API-driven LLM platform in Python abstracting multiple providers (OpenAI Responses API, Hugging Face Transformers) behind a unified interface with REST APIs, streaming responses, and structured JSON output.
+    \item Implemented an LLM-powered resume optimization workflow parsing resumes into structured domain models and rewriting content via prompt engineering, Pydantic-validated schemas, and deterministic retry logic.
+    \item Built a scoring engine evaluating job fit across relevance, skills match, impact, clarity, and ATS compatibility, with section-wise iterative refinement.
+    \item Built the full stack --- FastAPI backend, React frontend --- with GPU-accelerated inference (CUDA/FP16), Dockerized deployment, and multi-cloud support (AWS, GCP, Azure).
 \end{itemize}}}
 
 \end{itemize}
@@ -114,16 +137,21 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
+\needspace{3\baselineskip}
+\item{\cventry{2019--2023}{B.Tech in Electronics \& Communication Engineering}{Punjab Engineering College}{Chandigarh, India}{}{\vspace{1pt}
+CGPA: 7.13
 }}
 
-\vspace{3pt}
+\end{itemize}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
-}}
+% ============================================================
+%     CERTIFICATIONS
+% ============================================================
 
+\section{Certifications}
+\vspace{1pt}
+\begin{itemize}
+\item{\textbf{Google Cloud Certified --- Associate Cloud Engineer}, Google Cloud (Aug 2025 --- Dec 2030).}
 \end{itemize}
 
 % ============================================================
@@ -133,37 +161,28 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item [Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).
+\item Hindi (native), English (fluent, professional working proficiency).
 \end{itemize}
 
 % ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item [Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
+%     HONORS AND AWARDS
 % ============================================================
 
 \section{Honors and Awards}
 \vspace{1pt}
 \begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item{\textbf{Team Excellence Award} --- Deutsche Bank (2025).}
+\item{\textbf{Early promotion to Associate/SDE-II} --- Deutsche Bank (2025), awarded within the top 30\% of employees.}
 \end{itemize}
 
 % ============================================================
-%     REFERENCES
+%     VOLUNTEER EXPERIENCE
 % ============================================================
 
-\section{References}
+\section{Volunteer Experience}
 \vspace{1pt}
 \begin{itemize}
-\item{Available upon request.}
+\item{\textbf{Volunteer Teacher}, National Service Scheme (NSS), Punjab Engineering College, Chandigarh (2019--2023). Delivered free academic tutoring to underprivileged students.}
 \end{itemize}
 
 \end{document}

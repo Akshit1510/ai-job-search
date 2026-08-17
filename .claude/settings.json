@@ -1,11 +1,69 @@
 {
   "permissions": {
+    "defaultMode": "bypassPermissions",
     "allow": [
       "Skill(job-application-assistant)",
+      "Skill(job-scraper)",
+      "Skill(apply)",
+      "Skill(rank)",
+      "Skill(outcome)",
+      "Skill(interview)",
       "Bash(bun run:*)",
       "Bash(python salary_lookup.py:*)",
       "Bash(python3 salary_lookup.py:*)",
-      "Bash(pdftotext:*)"
+      "Bash(pdftotext:*)",
+      "Bash(lualatex:*)",
+      "Bash(xelatex:*)",
+      "Bash(python:*)",
+      "Bash(python3:*)",
+      "Bash(/d/programming/pythonEnvs/ai-job-search/Scripts/python.exe:*)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)",
+      "Bash(rm -f:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(du:*)",
+      "Bash(wc:*)",
+      "Bash(sed:*)",
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git check-ignore:*)",
+      "Read",
+      "Glob",
+      "Grep",
+      "WebFetch",
+      "WebSearch"
+    ],
+    "deny": [
+      "Bash(rm -rf:*)",
+      "Bash(rm -r:*)",
+      "Bash(git push:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git clean:*)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Grep",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "D:/programming/pythonEnvs/dev/Scripts/graphify.EXE hook-guard search"
+          }
+        ]
+      },
+      {
+        "matcher": "Read|Glob",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "D:/programming/pythonEnvs/dev/Scripts/graphify.EXE hook-guard read"
+          }
+        ]
+      }
     ]
   }
 }

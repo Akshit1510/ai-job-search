@@ -1,0 +1,53 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cover Letter - Rippling, Software Engineer 2, AI Platform
+% Bengaluru
+% Compile with: cd out/cover_letters && xelatex -interaction=nonstopmode cover_rippling_swe2_ai_platform.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{cover}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\rfoot{Page \thepage \hspace{0pt}}
+\thispagestyle{empty}
+\renewcommand{\headrulewidth}{0pt}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TITLE NAME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{}{\Huge{Akshit Maheshwari}}{  \href{mailto:akshitmaheshwari15102001@gmail.com}{akshitmaheshwari15102001@gmail.com} | +91 79868 64550 |  \urlstyle{same}\href{https://www.linkedin.com/in/akshitmaheshwari}{LinkedIn}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     MAIN COVER LETTER CONTENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\currentdate{\today}
+\lettercontent{Dear Rippling AI Platform hiring team,}
+
+\lettercontent{I am applying for the Software Engineer 2 role on the AI Platform team in Bengaluru. You want a strong backend engineer who is excited to build in an AI-first platform and who codes 70 to 80 percent of the time. That is the combination I have been looking for, and I hold no line-management responsibility, so code is already the bulk of my week.}
+
+\lettercontent{You ask for evals and model-quality feedback loops. I have built a small version of one: a scoring engine that grades each LLM-generated resume against the target job across relevance, skills match, impact, clarity, and ATS compatibility, then feeds low-scoring sections back for regeneration. It is a personal project, not production infrastructure, but it is the same generate, score, regenerate loop. At Deutsche Bank I shipped an internal retrieval-augmented question-answering system over thousands of enterprise documents and built an agentic natural-language-to-SQL generator on LangGraph. Nobody assigned either; I proposed and built both, and the LangGraph work is still a proof of concept.}
+
+\lettercontent{What I would bring to the AI Platform team:}
+
+{\raggedright\fontspec[Path = OpenFonts/fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont
+\begin{itemize}
+    \item \textbf{Backend and platform code:} Python, Java, and Kotlin across REST APIs and high-throughput services, tested with Pytest and TDD; caching and request-flow rework cut latency 30 to 40 percent, SQL query time roughly 35 percent at peak.
+    \item \textbf{Data pipelines:} multi-format ingestion with a reusable OCR framework, pgvector embedding and vector-index pipelines, multithreading that cut processing time 40 to 50 percent, and the debugging that traced and fixed an embedding-corruption fault in the production pipeline.
+\end{itemize}\par}
+\vspace{6pt}
+
+\lettercontent{Why Rippling specifically: your AI layer reached the whole product suite instead of stopping at a demo, running as a supervisor agent over specialized subagents with a layered evaluation system and a self-healing regression loop behind it. Retrieval quality and agent orchestration are what I have spent three years on, and your backend is Python and Django, the language I know best and still write daily. You also describe owning features end to end with guidance from Senior and Staff engineers, which is the arrangement I have grown fastest in.}
+
+\lettercontent{Where the line sits, plainly: my three years have been inside a large bank, not a high-growth product company, so your pace is a change I am choosing deliberately rather than one I have already lived. I build daily with Claude Code, which is part of how I keep the coding share of my work high. I am based in Pune and ready to relocate to Bengaluru, including the three days a week in office. I look forward to hearing from you.}
+
+\begin{flushright}
+\closing{Kind regards,}
+
+\signature{Akshit Maheshwari}
+\end{flushright}
+\end{document}

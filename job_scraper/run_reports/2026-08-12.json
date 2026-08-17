@@ -1,0 +1,241 @@
+{
+  "run_date": "2026-08-12",
+  "focus": "General scrape, both co-equal tracks (Priority 1A AI/LLM + 1B Backend) plus fintech. Deduplicated against all 48 previously seen jobs, including every row of the 2026-08-11 workbook.",
+  "portals_run": ["linkedin-search", "freehire-search"],
+  "portals_skipped": [
+    { "portal": "jobindex-search", "reason": "out of market (Denmark-only); left enabled, not run" },
+    { "portal": "jobbank-search", "reason": "out of market (Denmark-only); left enabled, not run" },
+    { "portal": "jobdanmark-search", "reason": "out of market (Denmark-only); left enabled, not run" },
+    { "portal": "jobnet-search", "reason": "out of market (Denmark-only); left enabled, not run" }
+  ],
+  "portal_health": [
+    {
+      "portal": "linkedin-search",
+      "status": "degraded - the location string \"Bengaluru, Karnataka, India\" silently returns 0 results while \"India\" and \"Pune, Maharashtra, India\" return normally. Confirmed by controlled test on an identical query. This is the exact string used in the skill's own SKILL.md example, so the documented sentinel query returns nothing. Bengaluru jobs DO exist and surface fine when searching with -l \"India\". Workaround applied this run: search country-wide and filter by location afterwards. Second signal: postedDate was null on every result this run, though it was populated on the 2026-08-11 run. Parsing anchors in .agents/skills/linkedin-search/"
+    }
+  ],
+  "jobs": [
+    {
+      "fit": "High",
+      "title": "Senior Backend Engineer (Java)",
+      "company": "Adyen",
+      "location": "Bengaluru, Karnataka",
+      "location_tier": "Tier 2",
+      "posted": "within 14 days",
+      "track": "Backend",
+      "seniority": "Senior - one level above band",
+      "notes": "Global payments platform, engineering-led product company. Java backend on payment infrastructure at genuine scale, which is the most direct domain transfer available from regulatory banking work at Deutsche Bank. Fintech is a named target sector. The Senior prefix is one level up, but Adyen's banding is broad and the stack match is exact.",
+      "url": "https://job-boards.greenhouse.io/adyen/jobs/8041307"
+    },
+    {
+      "fit": "High",
+      "title": "SDE II - Backend",
+      "company": "Kutumb",
+      "location": "Bengaluru, Karnataka",
+      "location_tier": "Tier 2",
+      "posted": "within 14 days",
+      "track": "Backend",
+      "seniority": "SDE II - exact band",
+      "notes": "The only posting in this run whose title is exactly the target band. Indian product company building a community platform. CAUTION: the LinkedIn detail fetch returned an empty description and null location, so requirements are unverified - check the posting directly before investing time.",
+      "url": "https://www.linkedin.com/jobs/view/4448183695"
+    },
+    {
+      "fit": "High",
+      "title": "Senior Backend Software Engineer - AI Platform",
+      "company": "Nightfall AI",
+      "location": "Bengaluru, Karnataka",
+      "location_tier": "Tier 2",
+      "posted": "within 14 days",
+      "track": "Both",
+      "seniority": "Senior - one level above band",
+      "notes": "Backend plus AI platform in one role, the two-track combination that scores highest under the current framework. Data-security company, so the AI work sits on real production infrastructure rather than demos. Same shape as the Rippling AI Platform role already applied for.",
+      "url": "https://jobs.ashbyhq.com/nightfall-ai/e52933cf-a0e5-4158-95e2-6d8f2b32ae8f"
+    },
+    {
+      "fit": "High",
+      "title": "Senior Software Engineer (Backend, AI)",
+      "company": "Experian",
+      "location": "Hyderabad, Telangana",
+      "location_tier": "Tier 2",
+      "posted": "within 14 days",
+      "track": "Both",
+      "seniority": "Senior - one level above band",
+      "notes": "Credit and data analytics, regulated environment, backend plus AI in a single role. Regulatory and compliance context transfers directly from Deutsche Bank. Appeared three times across different aggregator sources; consolidated to one row as a single requisition.",
+      "url": "https://jobs.smartrecruiters.com/Experian/744000143085970-senior-software-engineer-backend-ai-"
+    },
+    {
+      "fit": "Medium",
+      "title": "Backend Engineer, Geo Team",
+      "company": "GitLab",
+      "location": "Bangalore, India",
+      "location_tier": "Tier 2",
+      "posted": "within 14 days",
+      "track": "Backend",
+      "seniority": "Unprefixed - likely in band",
+      "notes": "Strong engineering culture and an all-remote company, with no seniority prefix on the title. The catch is the stack: GitLab's backend is Ruby on Rails and Go, neither of which is in the profile. Distributed-systems work on Geo replication is genuinely interesting but would be a language switch.",
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8695515002"
+    },
+    {
+      "fit": "Medium",
+      "title": "Senior Software Engineer, Backend",
+      "company": "DoorDash India",
+      "location": "Pune, India",
+      "location_tier": "Tier 1",
+      "posted": "within 14 days",
+      "track": "Backend",
+      "seniority": "Senior - one level above band",
+      "notes": "The only Tier 1 (Pune, no relocation) product-company backend role in this run. High-scale consumer platform. Senior level is a stretch at 3 years, but the location advantage is real.",
+      "url": "https://job-boards.greenhouse.io/doordashindia/jobs/6849991"
+    },
+    {
+      "fit": "Medium",
+      "title": "Senior Software Engineer, Backend (4 distinct team postings)",
+      "company": "Roku",
+      "location": "Bengaluru, India",
+      "location_tier": "Tier 2",
+      "posted": "within 14 days",
+      "track": "Backend",
+      "seniority": "Senior - one level above band",
+      "notes": "Four separate Bengaluru backend openings across distinct teams (Ads Engineering, Backend and Data, and two general). Not a mass-posting pattern; the titles and teams genuinely differ. One is explicitly Java. Product company at consumer scale.",
+      "url": "https://www.weareroku.com/jobs/8009980"
+    },
+    {
+      "fit": "Medium",
+      "title": "Generative AI Engineer",
+      "company": "BharatGen",
+      "location": "Mumbai Metropolitan Region",
+      "location_tier": "Tier 2",
+      "posted": "within 14 days",
+      "track": "AI",
+      "seniority": "Unprefixed - unverified",
+      "notes": "India's sovereign foundation-model initiative. Genuinely AI-first, but likely weighted toward model training and research rather than the application and retrieval engineering that is the actual strength. Verify which side of that line the role sits on before applying.",
+      "url": "https://www.linkedin.com/jobs/view/4453076575"
+    },
+    {
+      "fit": "Medium",
+      "title": "AI Engineer - Agentic AI & GraphRAG",
+      "company": "Agivant Technologies",
+      "location": "Hyderabad, Telangana",
+      "location_tier": "Tier 2",
+      "posted": "within 14 days",
+      "track": "AI",
+      "seniority": "Unprefixed - unverified",
+      "notes": "Agentic AI and GraphRAG is close to the LangGraph and hybrid-retrieval work already on the CV. Smaller and less-known company, so screen for the services/consultancy model before investing time.",
+      "url": "https://www.linkedin.com/jobs/view/4453100833"
+    },
+    {
+      "fit": "Medium",
+      "title": "Software Engineer",
+      "company": "IDfy",
+      "location": "Mumbai Metropolitan Region",
+      "location_tier": "Tier 2",
+      "posted": "within 14 days",
+      "track": "Backend",
+      "seniority": "Unprefixed - likely in band",
+      "notes": "Identity verification and fraud product, fintech-adjacent and compliance-heavy, which matches the regulated-systems background. No seniority prefix.",
+      "url": "https://www.linkedin.com/jobs/view/4447012323"
+    },
+    {
+      "fit": "Medium",
+      "title": "Backend Software Engineer",
+      "company": "DealHub.ai",
+      "location": "Bengaluru, Karnataka",
+      "location_tier": "Tier 2",
+      "posted": "within 14 days",
+      "track": "Backend",
+      "seniority": "Unprefixed - likely in band",
+      "notes": "Enterprise SaaS revenue platform. No seniority prefix, product company, plausible band. Not detail-fetched this run.",
+      "url": "https://dealhub.io/careers/8D.46A/backend-software-engineer/"
+    },
+    {
+      "fit": "Medium",
+      "title": "Software Engineer - Backend",
+      "company": "hosted.ai",
+      "location": "Bengaluru, Karnataka",
+      "location_tier": "Tier 2",
+      "posted": "within 14 days",
+      "track": "Both",
+      "seniority": "Unprefixed - likely in band",
+      "notes": "AI infrastructure company, backend role. No seniority prefix. Small company, so verify funding and stage before applying.",
+      "url": "https://www.linkedin.com/jobs/view/4447188176"
+    },
+    {
+      "fit": "Medium",
+      "title": "Software Engineer",
+      "company": "Crunchyroll",
+      "location": "Hyderabad, Telangana",
+      "location_tier": "Tier 2",
+      "posted": "within 14 days",
+      "track": "Backend",
+      "seniority": "Unprefixed - likely in band",
+      "notes": "Consumer streaming product at scale, engineering-led. No seniority prefix. Generic title, so the actual scope needs checking.",
+      "url": "https://www.linkedin.com/jobs/view/4303883533"
+    },
+    {
+      "fit": "Medium",
+      "title": "Senior Backend Developer (Python)",
+      "company": "MishiPay",
+      "location": "Bengaluru, Karnataka",
+      "location_tier": "Tier 2",
+      "posted": "within 14 days",
+      "track": "Backend",
+      "seniority": "Senior - one level above band",
+      "notes": "Retail technology product company, Python backend. Two near-identical Bengaluru postings from the same company this run; treat as one opening.",
+      "url": "https://www.linkedin.com/jobs/view/4448186752"
+    },
+    {
+      "fit": "Medium",
+      "title": "AI Engineer - LLM & Agentic Systems",
+      "company": "Navaris Digital",
+      "location": "Pune / Pimpri-Chinchwad",
+      "location_tier": "Tier 1",
+      "posted": "within 14 days",
+      "track": "AI",
+      "seniority": "Unprefixed - unverified",
+      "notes": "Tier 1 location and an exact topical match on LLM and agentic systems. Small, low-profile company, so the services-versus-product question needs answering first.",
+      "url": "https://www.linkedin.com/jobs/view/4447325815"
+    },
+    {
+      "fit": "Low",
+      "title": "Backend Engineer",
+      "company": "Neysa",
+      "location": "Mumbai Metropolitan Region",
+      "location_tier": "Tier 2",
+      "posted": "within 14 days",
+      "track": "Backend",
+      "seniority": "5 to 7 years required - above band",
+      "notes": "Detail fetch verified the mismatch: requires 5 to 7 years, and the stack is NestJS, gRPC, TypeORM, Neo4j and Kafka rather than Java/Spring or Python/FastAPI. The posting is also explicit that the work is mainly bug fixing and production support on an existing codebase, which sits against the recorded preference for building over maintenance.",
+      "url": "https://www.linkedin.com/jobs/view/4447013719"
+    },
+    {
+      "fit": "Low",
+      "title": "Machine Learning Research Engineer, LLM Pre-training and Post-training",
+      "company": "Eka Care",
+      "location": "Bengaluru, India",
+      "location_tier": "Tier 2",
+      "posted": "within 14 days",
+      "track": "AI",
+      "seniority": "Unprefixed - research-weighted",
+      "notes": "Model pre-training and post-training research, which is the documented weak area: the AI strength is LLM and RAG application engineering, not model training. Correctly scored low despite the AI label.",
+      "url": "https://ekacare.keka.com/careers/jobdetails/155617"
+    },
+    {
+      "fit": "Low",
+      "title": "AI Engineer, 5+ years (posted identically across 4 cities)",
+      "company": "Zorba AI",
+      "location": "Chennai / Kolkata / Indore / Gurugram",
+      "location_tier": "Mixed",
+      "posted": "within 14 days",
+      "track": "AI",
+      "seniority": "5+ years - above band",
+      "notes": "MASS-POSTING PATTERN: the same listing appears across four cities differing only in location. This describes how the listing is being distributed, not a judgement about the employer. Combined with the 5+ year requirement, low priority.",
+      "url": "https://www.linkedin.com/jobs/view/4448256925"
+    }
+  ],
+  "observations": [
+    "PORTAL BUG WORTH KNOWING: LinkedIn searches using the location string \"Bengaluru, Karnataka, India\" return zero results, while \"India\" and \"Pune, Maharashtra, India\" work normally. Bengaluru roles exist and appear fine under a country-wide search. Any past run that searched Bengaluru directly will have silently under-reported India's largest tech market.",
+    "Seniority inflation is the dominant pattern this run. Of 18 new postings, exactly one (Kutumb, SDE II) carries the target title. Most product-company backend roles in India are advertised at Senior or above, which means applying one level up is the norm rather than the exception.",
+    "Service and staffing firms dominated raw volume and were filtered out per the recorded deal-breaker: UST, Persistent Systems, GyanSys, Uplers, HireVibe, Zensar, Cognizant, Sopra Steria, Synechron, getinz-people, plus aggregator reposts from Jobgether and Weekday. Roughly half of all backend results were in this category.",
+    "The equal-weighting change continues to pay: Adyen and Kutumb are pure backend roles with no AI content and rank among the strongest here, while Nightfall AI and Experian hit both tracks at once."
+  ]
+}

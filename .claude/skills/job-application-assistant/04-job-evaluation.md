@@ -4,7 +4,13 @@ framework_version: 1.1.0
 
 # Job Evaluation Framework
 
-<!-- SETUP: Skill match areas and career goals are personalized by running /setup -->
+<!-- Personalized by /setup (Path B) on 2026-07-26 -->
+
+## Candidate eligibility baseline
+
+Akshit is an **Indian citizen resident in Pune**. For roles located in India the eligibility gate below is not applicable - skip it and go straight to scoring.
+
+For **international roles**, the gate is fully in force and is the first thing to check: Akshit needs visa sponsorship and relocation support. Treat "must have existing work authorization in <country>", "no sponsorship available", or a security-clearance requirement as a **hard FAIL** and report it with the quoted wording rather than drafting. Postings that explicitly say they sponsor, or that name India-based hiring, are a **PASS** and worth calling out as a positive in the application.
 
 ## Eligibility Gate — run before scoring
 
@@ -44,9 +50,13 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Python, Java, Kotlin, Spring Boot, FastAPI, REST API design, microservices, backend architecture; LLM/RAG systems (LangChain, LangGraph, embeddings, hybrid retrieval, cross-encoders, prompt engineering, OpenAI APIs, Hugging Face Transformers, pgvector); Docker, OpenShift, Jenkins, CI/CD, Linux, GCP; SQL and performance optimization; Pytest, Pydantic, TDD
+
+**Moderate match areas:** C++; Vue.js, TypeScript, React (frontend is real but secondary); Kubernetes (used, not owned at depth); AWS and Azure (personal project only - GCP is the certified/production cloud); Streamlit; OCR and document-processing pipelines; multithreading and concurrency
+
+**Weak match areas:** Classical ML / data science (scikit-learn, statistical modelling, feature engineering, experiment design) - Akshit's AI work is LLM/RAG application engineering, not model training; MLOps platforms (MLflow, Kubeflow, SageMaker, Vertex AI pipelines); model fine-tuning and training infrastructure; data engineering at scale (Spark, Kafka, Airflow, dbt, warehousing); Go, Rust, Scala, C#, PHP, Ruby; mobile development; deep frontend specialization (Next.js, state management, design systems); Terraform / IaC; observability stacks (Prometheus, Grafana, Datadog) beyond basic logging; people management
+
+**Scoring note:** A posting asking for "ML Engineer" that means *model training* is a much weaker fit than the title suggests. Read the responsibilities, not the title - if the work is RAG, LLM orchestration, inference serving, or AI application engineering, score it high; if it is training, evaluation, and experimentation on models, score it 40-59 and say so.
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for?
@@ -58,9 +68,13 @@ Does work history align with what they're looking for?
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Seniority baseline:** ~3 years of professional experience (Aug 2023 - present), currently Associate/SDE-II after an early promotion. Target band is **SDE-II / Software Engineer II / mid-level**. Score "Senior Engineer" postings asking for 5+ years at 40-59 unless the responsibilities genuinely match; score "SDE-I / Junior / Graduate" postings low on career alignment - they are a backwards step.
+
+**Strong:** Backend engineering in Java/Kotlin/Spring Boot and Python/FastAPI; enterprise banking and regulatory compliance systems; LLM/RAG application engineering (enterprise chatbot, semantic search, embedding pipelines); performance and query optimization; CI/CD ownership on Docker/OpenShift/Jenkins
+
+**Moderate:** Full-stack work with Vue/TypeScript/React frontends; cloud-native deployment on GCP; document ingestion and OCR pipelines; agentic LLM orchestration with LangGraph (POC-level at work, deeper in the personal project); multi-cloud deployment (personal project only)
+
+**Entry-level:** Model training and classical ML; data engineering platforms; SRE and observability ownership; team leadership and people management; client-facing or pre-sales engineering
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -74,11 +88,19 @@ Does the role and company culture match the behavioral profile?
 
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
+**Akshit-specific red flags:** Service/consultancy body-shop model (hard deal-breaker - see below); chronically shifting requirements or unclear ownership; heavy governance with no engineering counterweight; AI work that never escapes POC status *in a posting that sells itself on AI* (a posting that never mentions AI is not committing this sin - see the two-track rule under Career Alignment).
+
+**Green flags:** stated ownership and autonomy, frequent shipping, visible senior engineering bench, and **either** LLM systems actually in production **or** genuine backend depth - scale, latency budgets, architecture ownership, systems that carry real traffic.
+
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
-- Frequent international travel: FLAG (discuss with user)
+Akshit's geography is deliberately wide. Location is rarely a FAIL - grade it in tiers instead:
+- **Pune (on-site or hybrid): PASS - Tier 1.** Home city, no relocation needed.
+- **Fully remote within India: PASS - Tier 1.**
+- **Other Indian metros (Bangalore, Hyderabad, NCR/Gurgaon, Mumbai, Chennai): PASS - Tier 2.** Relocation acceptable; note whether the employer offers relocation support.
+- **International with visa sponsorship / relocation support: PASS - Tier 3.** Confirm sponsorship explicitly (see the eligibility baseline at the top of this file) before drafting.
+- **International with no sponsorship, or requiring existing local work rights: FAIL.** Quote the wording back to the user.
+- **Smaller Indian cities with no remote option: FLAG** - discuss before drafting.
+- **Frequent international travel: FLAG** (discuss with user).
 
 ### 5. Career Alignment & Motivation (0-100)
 Does this role advance career goals and contain tasks that energize?
@@ -90,20 +112,34 @@ Does this role advance career goals and contain tasks that energize?
 | 40-59 | Decent job but doesn't build toward career goals |
 | 0-39 | Dead end or backwards step |
 
-**Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+**Career goals — two co-equal tracks:**
 
-**Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
-- Non-task factors: leadership style, department culture, company values, degree of autonomy
+Akshit's search runs on **two tracks of equal weight: backend engineering depth and applied AI/LLM engineering.** Either one, on its own, satisfies the career direction. Score them symmetrically.
 
-**Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Backend track:** deep backend and distributed-systems work - API and service architecture, high-throughput systems, performance and database engineering, end-to-end ownership from design through deployment. A strong backend role with **no AI content whatsoever is a full-marks career fit**, not a compromise.
+- **AI track:** roles where **AI/LLM systems reach production** rather than stalling as POCs - retrieval, orchestration, inference serving, agentic workflows. A strong AI role with limited classical backend scope is likewise a full-marks fit.
+- Consolidate the SDE-II level at a **product-engineering company** where engineering is the product, with a visible path toward senior
+- Work alongside **strong senior engineers** in a genuine code-review and technical-depth culture
+- Optionally: an international move, if it comes with sponsorship and a step up in engineering quality
+
+**Scoring rule (important):** Do **not** deduct career-alignment points from a backend-heavy posting because it does not mention AI, and do not deduct from an AI-heavy posting because it is light on traditional backend. Score against whichever track the posting sits on. A role that hits **both** tracks is exceptional and should score at the very top of the band, but hitting one track well is already a strong score (80+). The low scores are reserved for roles that are shallow on both - ticket-queue maintenance, thin CRUD work with no scale or ownership, and AI work permanently confined to demos.
+
+**Motivation filter:** Evaluate not just whether Akshit *can* do the tasks, but whether the tasks will *energize* them.
+- **Tasks that energize:** designing and building backend services end to end; API and service architecture at throughput; performance optimization, profiling, and database tuning; hard debugging; LLM/RAG application engineering (retrieval quality, orchestration, agentic workflows); shipping POCs into production; learning a new part of the stack under senior guidance. **Backend and AI items in this list carry equal weight** - a posting full of the backend items and none of the AI items is just as energizing as the reverse.
+- **Tasks that drain:** work with unclear direction that gets thrown away and redone; AI work confined permanently to demos; ticket-queue maintenance; approval-chain overhead with no engineering payoff
+- **Non-task factors:** degree of autonomy, technical credibility of the manager, seniority of the surrounding engineering bench, whether the team ships often
+
+**Life situation alignment:**
+- **Security:** Currently employed and not under time pressure - can be selective and should be. A move must be a clear step up, not lateral.
+- **Compensation baseline:** Target band **Rs. 25-35 LPA**; treat offers materially below Rs. 25 LPA as a filter-out. Flag postings that publish a band below this. **Never surface compensation figures in a CV or cover letter.**
+- **Flexibility:** No recorded family or schedule constraints. On-site, hybrid, and remote are all workable; relocation within India and internationally (with sponsorship) is on the table.
+- **Professional development:** Highest priority is production AI/LLM exposure plus senior mentorship. A role offering both can outweigh a moderate compensation difference; a role offering neither should score low on this dimension regardless of pay.
+
+## Calibration from Past Applications
+
+<!-- Empty. Populated by /setup Path A once documents/applications/<company>_<role>/ folders with -->
+<!-- job_posting.md + outcome.md pairs exist, or incrementally by /outcome as results come in. -->
+No application history recorded yet.
 
 ### 6. Salary Benchmark (Optional)
 

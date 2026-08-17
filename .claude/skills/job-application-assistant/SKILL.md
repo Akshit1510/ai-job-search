@@ -28,13 +28,13 @@ When the user provides a job posting (URL or text), follow this workflow:
 ### Step 2: Tailor CV
 - Read the most relevant existing CV variant from `cv/` as a starting point
 - Follow the guidelines in `05-cv-templates.md`
-- Create `cv/main_<company>_<role>.tex` with tailored content
+- Create `out/applications/<company>_<role>/main_<company>_<role>.tex` with tailored content (each job gets its own folder; never write into `cv/`, which holds only the master template)
 - Adjust: profile statement, skills section, experience bullet emphasis, section order
 
 ### Step 3: Write Cover Letter
 - Follow the writing style rules in `03-writing-style.md` (critical: no em-dashes, no cliches)
 - Follow the template structure in `06-cover-letter-templates.md`
-- Create `cover_letters/cover_<company>_<role>.tex`
+- Create `out/applications/<company>_<role>/cover_<company>_<role>.tex` in the same job folder as the CV, after copying `cover.cls` and `OpenFonts/` into it (never write into `cover_letters/`, which holds only the template and shared assets)
 - Ensure the letter connects specific experience to the role requirements
 
 ### Step 4: Interview Preparation

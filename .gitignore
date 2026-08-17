@@ -89,3 +89,8 @@ upskill/*.md
 
 # Brainstorm mockups (superpowers visual companion) - never ship
 .superpowers/
+
+# out/ duplicates of cover-letter build assets (1.7 MB of fonts).
+# Restore with: cp cover_letters/cover.cls out/applications/<job>/ && cp -r cover_letters/OpenFonts out/applications/<job>/
+out/applications/*/OpenFonts/
+out/applications/*/cover.cls

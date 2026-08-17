@@ -1,0 +1,55 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cover Letter - Apple, Backend Engineer (Java)
+% IS&T Customer Systems, Hyderabad | Role Number 200663281-1052
+% Compile with: cd out/cover_letters && xelatex -interaction=nonstopmode cover_apple_backend_engineer.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{cover}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\rfoot{Page \thepage \hspace{0pt}}
+\thispagestyle{empty}
+\renewcommand{\headrulewidth}{0pt}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TITLE NAME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{}{\Huge{Akshit Maheshwari}}{  \href{mailto:akshitmaheshwari15102001@gmail.com}{akshitmaheshwari15102001@gmail.com} | +91 79868 64550 |  \urlstyle{same}\href{https://www.linkedin.com/in/akshitmaheshwari}{LinkedIn}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     MAIN COVER LETTER CONTENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\currentdate{\today}
+\lettercontent{Dear Apple IS\&T hiring team,}
+
+\lettercontent{I am applying for the Backend Engineer (Java) role with Customer Systems in Hyderabad, Role Number 200663281-1052. Your three minimum requirements, three or more years designing scalable enterprise-grade solutions plus hands-on Java, Spring Boot, and microservices, map onto three years of backend engineering at Deutsche Bank, most recently leading the Java, Kotlin, and Spring Boot backend of a regulatory trade-exception platform.}
+
+\lettercontent{I have spent three years on platforms for a large regulated business, where reliability and auditability are compliance obligations rather than preferences, so building for them is already how I work. IS\&T runs Apple Pay, the Apple website, and the systems behind manufacturing, logistics, and retail: the same shape of problem, transactional backends where correctness is auditable and downtime is expensive. Nobody assigned me the enterprise RAG chatbot or the natural-language-to-SQL generator either; I proposed and built both, and I would bring the same initiative here.}
+
+\lettercontent{What I would bring to Customer Systems:}
+
+{\raggedright\fontspec[Path = OpenFonts/fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont
+\begin{itemize}
+    \item \textbf{Web applications and API platforms:} I design the REST APIs behind that platform, serving a Vue.js and TypeScript client at high-throughput banking volumes.
+    \item \textbf{Low latency and data caching:} caching strategy and request-flow rework cut latency 30 to 40 percent, application load 30 percent, and SQL query time roughly 35 percent at peak.
+    \item \textbf{Concurrent programming:} I restructured a document ingestion and indexing pipeline to run multithreaded, cutting processing time 40 to 50 percent, then traced and fixed an embedding-corruption fault that was destabilising the pipeline at scale.
+    \item \textbf{Delivery and mentoring:} I own releases and CI/CD across Jenkins, TeamCity, OpenShift, and Linux, delivering into a regulated change process, and hold a 2025 Team Excellence Award.
+\end{itemize}\par}
+\vspace{6pt}
+
+\lettercontent{Where the line sits, plainly: my systems are high-throughput and service-oriented, but I have not architected distributed systems at the scale you run, and my security background is regulatory and access-control discipline from banking rather than application security depth. Both are areas I would want to learn from your engineers. I also build daily with Claude Code, which is part of how I get from design to something reviewable fast.}
+
+\lettercontent{I am based in Pune and ready to relocate to Hyderabad for this role. I look forward to hearing from you.}
+
+\begin{flushright}
+\closing{Kind regards,}
+
+\signature{Akshit Maheshwari}
+\end{flushright}
+\end{document}

@@ -1,0 +1,54 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cover Letter - Rippling, Software Engineer II, Data Catalog
+% Bengaluru
+% Compile with: cd out/cover_letters && xelatex -interaction=nonstopmode cover_rippling_swe2_data_catalog.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{cover}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\rfoot{Page \thepage \hspace{0pt}}
+\thispagestyle{empty}
+\renewcommand{\headrulewidth}{0pt}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TITLE NAME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{}{\Huge{Akshit Maheshwari}}{  \href{mailto:akshitmaheshwari15102001@gmail.com}{akshitmaheshwari15102001@gmail.com} | +91 79868 64550 |  \urlstyle{same}\href{https://www.linkedin.com/in/akshitmaheshwari}{LinkedIn}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     MAIN COVER LETTER CONTENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\currentdate{\today}
+\lettercontent{Dear Rippling Data Catalog hiring team,}
+
+\lettercontent{I am applying for the Software Engineer II role on the Data Catalog team in Bengaluru. Your mission is to make a schema spanning millions of fields discoverable and actionable for both humans and AI. I spent two years on the closest analogue to that problem: a semantic search layer that made thousands of enterprise documents findable at Deutsche Bank, where the objects were unstructured documents rather than structured schema.}
+
+\lettercontent{Three of your four pillars have close analogues in work I have already shipped, over documents rather than schema:}
+
+{\raggedright\fontspec[Path = OpenFonts/fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont
+\begin{itemize}
+    \item \textbf{Discoverability:} pgvector embedding and vector-index pipelines with hybrid retrieval, multi-query retrievers, and cross-encoder re-ranking, tuned for retrieval quality across a large and inconsistent corpus.
+    \item \textbf{Enrichment:} an ingestion framework that extracted and normalized content from Confluence, PDF, Word, Excel, and images, including a reusable OCR and image-indexing layer that pulled visual documents into the searchable set.
+    \item \textbf{Lifecycle:} keeping that index trustworthy at scale, which is where I traced and fixed an embedding-corruption fault, and cut ingestion time 40 to 50 percent with multithreading.
+\end{itemize}\par}
+\vspace{6pt}
+
+\lettercontent{Why Rippling: your AI layer reached the whole product suite instead of stopping at a demo, and the Catalog is the backbone underneath it. Making metadata trustworthy enough for an assistant to act on is a harder problem than making documents searchable, and it is the direction I want to go. The closest I have come is a self-initiated proof of concept translating plain-English questions into complex bank-specific SQL, which is the same shape of problem as generating RQL examples or picking the right field out of a vast schema. Your backend is Python and Django, the language I know best and the one both my AI work and my personal platform are built in, and I already move between backend and frontend, with Vue and TypeScript at work and React on that platform.}
+
+\lettercontent{Where the line sits, plainly: governance is the fourth pillar and the one I cannot claim. I have built on regulatory platforms inside a bank, but I have not owned governance tooling, so PII classification and lineage as a discipline would be new, and I would want to learn them from whoever owns them on the team.}
+
+\lettercontent{I am based in Pune and ready to relocate to Bengaluru, including the three days a week in office. I look forward to hearing from you.}
+
+\begin{flushright}
+\closing{Kind regards,}
+
+\signature{Akshit Maheshwari}
+\end{flushright}
+\end{document}

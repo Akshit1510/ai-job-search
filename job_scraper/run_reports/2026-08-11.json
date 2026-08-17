@@ -1,0 +1,224 @@
+{
+  "run_date": "2026-08-11",
+  "focus": "Named target companies: Mastercard, Google, Apple, Databricks, Rippling",
+  "portals_run": ["linkedin-search", "freehire-search"],
+  "portals_skipped": [
+    {
+      "portal": "jobindex-search",
+      "reason": "out of market (Denmark-only); left enabled, not run"
+    },
+    {
+      "portal": "jobbank-search",
+      "reason": "out of market (Denmark-only); left enabled, not run"
+    },
+    {
+      "portal": "jobdanmark-search",
+      "reason": "out of market (Denmark-only); left enabled, not run"
+    },
+    {
+      "portal": "jobnet-search",
+      "reason": "out of market (Denmark-only); left enabled, not run"
+    }
+  ],
+  "portal_health": [],
+  "jobs": [
+    {
+      "fit": "High",
+      "title": "Software Engineer 2 - AI Platform",
+      "company": "Rippling",
+      "location": "Bengaluru, Karnataka",
+      "location_tier": "Tier 2",
+      "posted": "2026-07-31",
+      "track": "Both",
+      "seniority": "Software Engineer II - exact band",
+      "notes": "Standout of the run. Backend + AI platform simultaneously: agents, automated workflows, evaluation systems, data pipelines, model-quality feedback loops. Posting states '70-80% coding is non-negotiable' and targets engineers 'strong in backend engineering... excited to build in an AI-first platform environment'. Directly answers the 'AI that stalls at POC' concern.",
+      "url": "https://www.linkedin.com/jobs/view/4430138723"
+    },
+    {
+      "fit": "High",
+      "title": "Software Engineer III, Google Cloud",
+      "company": "Google",
+      "location": "Bengaluru / Hyderabad",
+      "location_tier": "Tier 2",
+      "posted": "2026-08-11",
+      "track": "Backend",
+      "seniority": "L4, min 2 yrs - exact band",
+      "notes": "Minimum 2 years, preferred 3 years DSA. Names Java/Kotlin and Python explicitly. Large-scale system design, distributed computing, data storage. Zero AI content - full marks under the equal-weighting rule. Single req covering both cities; you pick at application.",
+      "url": "https://www.linkedin.com/jobs/view/4412985419"
+    },
+    {
+      "fit": "High",
+      "title": "Software Engineer II - Data Catalog",
+      "company": "Rippling",
+      "location": "Bengaluru, Karnataka",
+      "location_tier": "Tier 2",
+      "posted": "2026-08-01",
+      "track": "Both",
+      "seniority": "Software Engineer II - exact band",
+      "notes": "'Intersection of platform infrastructure and AI'. Semantic layer making data 'discoverable, trustworthy, and actionable for both humans and AI' across millions of fields. Semantic search over enterprise-scale metadata maps directly onto the Deutsche Bank RAG chatbot work.",
+      "url": "https://www.linkedin.com/jobs/view/4403441100"
+    },
+    {
+      "fit": "High",
+      "title": "Backend Engineer (Java)",
+      "company": "Apple",
+      "location": "Hyderabad, Telangana",
+      "location_tier": "Tier 2",
+      "posted": "2026-07-25",
+      "track": "Backend",
+      "seniority": "Unprefixed - likely in band",
+      "notes": "IS&T Customer Systems. Supports 2.5B active devices; the AppleCare support platform handles 6 billion visits per year. Genuine high-throughput backend, matching your strongest measurable story. Java-first, aligns with the Spring Boot track.",
+      "url": "https://www.linkedin.com/jobs/view/4444642891"
+    },
+    {
+      "fit": "Medium",
+      "title": "Software Engineer III, AI/ML, Google Cloud",
+      "company": "Google",
+      "location": "Bengaluru, Karnataka",
+      "location_tier": "Tier 2",
+      "posted": "2026-08-04",
+      "track": "AI",
+      "seniority": "L4, min 2 yrs - in band",
+      "notes": "Years requirement fits, but asks for 1 yr ML infrastructure (model deployment, evaluation, optimization) and lists TensorFlow / ML algorithms. That is model-side work, a documented weak area. Core GenAI/LLM concepts requirement is a strong match.",
+      "url": "https://www.linkedin.com/jobs/view/4439460961"
+    },
+    {
+      "fit": "Medium",
+      "title": "Software Engineer III, Infrastructure, Google Cloud",
+      "company": "Google",
+      "location": "Bengaluru, Karnataka",
+      "location_tier": "Tier 2",
+      "posted": "2026-08-07",
+      "track": "Backend",
+      "seniority": "L4 - in band",
+      "notes": "Infrastructure-flavoured variant of the SWE III track. Not detail-fetched this run; verify the infra depth expectation before applying.",
+      "url": "https://www.linkedin.com/jobs/view/4440787505"
+    },
+    {
+      "fit": "Medium",
+      "title": "Lead Software Engineer - Agentic Systems (L6)",
+      "company": "Mastercard",
+      "location": "Pune, Maharashtra",
+      "location_tier": "Tier 1",
+      "posted": "2026-08-11",
+      "track": "Both",
+      "seniority": "L6 Lead - two levels above band",
+      "notes": "Agentic systems work in your home city is close to ideal on paper. Posted at L6 Lead, two levels above SDE-II. Sits in Business & Market Insights (analytics/insights org) with consulting-flavoured language. Expect the seniority bar to bite.",
+      "url": "https://www.linkedin.com/jobs/view/4440177726"
+    },
+    {
+      "fit": "Medium",
+      "title": "Senior Software Engineer - AI Initiative",
+      "company": "Rippling",
+      "location": "Bengaluru, Karnataka",
+      "location_tier": "Tier 2",
+      "posted": "2026-07-30",
+      "track": "Both",
+      "seniority": "Senior - one level above band",
+      "notes": "Same org as the two high-fit Rippling roles. One level up; worth a look if the SWE II applications progress well.",
+      "url": "https://www.linkedin.com/jobs/view/4429918110"
+    },
+    {
+      "fit": "Medium",
+      "title": "Software Engineer : Data & AI",
+      "company": "Apple",
+      "location": "Bengaluru / Hyderabad",
+      "location_tier": "Tier 2",
+      "posted": "2026-07-29",
+      "track": "Both",
+      "seniority": "Unprefixed - likely in band",
+      "notes": "Not detail-fetched this run. Two near-identical postings (Bengaluru 4446061743, Hyderabad 4446080221) - likely one req across two sites.",
+      "url": "https://www.linkedin.com/jobs/view/4446061743"
+    },
+    {
+      "fit": "Medium",
+      "title": "Software Engineer - Java",
+      "company": "Apple",
+      "location": "Hyderabad, Telangana",
+      "location_tier": "Tier 2",
+      "posted": "2026-07-28",
+      "track": "Backend",
+      "seniority": "Unprefixed - likely in band",
+      "notes": "Second Apple Java backend opening in Hyderabad. Not detail-fetched; compare scope against the Backend Engineer (Java) req before applying to both.",
+      "url": "https://www.linkedin.com/jobs/view/4443241235"
+    },
+    {
+      "fit": "Medium",
+      "title": "Software Engineer III, AI/ML",
+      "company": "Google",
+      "location": "Hyderabad, Telangana",
+      "location_tier": "Tier 2",
+      "posted": "2026-07-28",
+      "track": "AI",
+      "seniority": "L4 - in band",
+      "notes": "Hyderabad variant of the AI/ML SWE III track. Same ML-infrastructure caveat as the Bengaluru posting.",
+      "url": "https://www.linkedin.com/jobs/view/4427719654"
+    },
+    {
+      "fit": "Medium",
+      "title": "Senior Software Engineer - Ingestion",
+      "company": "Databricks",
+      "location": "Bengaluru, Karnataka",
+      "location_tier": "Tier 2",
+      "posted": "2026-08-07",
+      "track": "Backend",
+      "seniority": "Senior - above band",
+      "notes": "Lakeflow Connect team. Explicitly wants 'core Database internals' - incremental data capture, log parsing, extracting from OLTP with minimal production load. That is specialist DB-internals work and a genuine gap.",
+      "url": "https://www.linkedin.com/jobs/view/4438789631"
+    },
+    {
+      "fit": "Low",
+      "title": "Generative AI Forward Deployed Engineer",
+      "company": "Google",
+      "location": "Pune / Mumbai / Bengaluru",
+      "location_tier": "Tier 1",
+      "posted": "2026-08-10",
+      "track": "AI",
+      "seniority": "8 years required - well above band",
+      "notes": "Technology match is near-perfect: vector databases, RAG architectures, LangGraph, multi-agent patterns (ReAct, self-reflection), production AI from conception to launch. But requires 8 years and is a customer-embedded forward-deployed role, which brushes the recorded friction with client-facing delivery. Listed so you can make your own call.",
+      "url": "https://www.linkedin.com/jobs/view/4451138295"
+    },
+    {
+      "fit": "Low",
+      "title": "Principal Applied AI App Engineer",
+      "company": "Mastercard",
+      "location": "Pune, Maharashtra",
+      "location_tier": "Tier 1",
+      "posted": "2026-07-21",
+      "track": "AI",
+      "seniority": "Principal - well above band",
+      "notes": "Pune and applied AI, but Principal level is far above SDE-II.",
+      "url": "https://www.linkedin.com/jobs/view/4443354330"
+    },
+    {
+      "fit": "Low",
+      "title": "Staff Software Engineer - Backend",
+      "company": "Databricks",
+      "location": "Bengaluru, Karnataka",
+      "location_tier": "Tier 2",
+      "posted": "2026-07-26",
+      "track": "Backend",
+      "seniority": "Staff - well above band",
+      "notes": "Part of the cluster of near-identical Bengaluru Staff postings previously flagged as a mass-posting pattern. Distribution signal only, not an accusation.",
+      "url": "https://www.linkedin.com/jobs/view/4348219534"
+    },
+    {
+      "fit": "Low",
+      "title": "Staff Software Engineer (Infrastructure)",
+      "company": "Databricks",
+      "location": "Bengaluru, Karnataka",
+      "location_tier": "Tier 2",
+      "posted": "2026-07-30",
+      "track": "Backend",
+      "seniority": "Staff - well above band",
+      "notes": "Same Staff-level cluster. All Databricks India openings this run were Staff or Senior only.",
+      "url": "https://www.linkedin.com/jobs/view/4297757022"
+    }
+  ],
+  "observations": [
+    "Mastercard's Pune volume is almost entirely above band - all ten postings were Senior, Lead, or Principal. The company with the best geography has the worst level fit.",
+    "The backend/AI equal-weighting change earned its keep immediately: Google Cloud SWE III and Apple Backend Engineer (Java) have no AI content at all and are two of the four best matches. The old 'no path for AI/LLM work to reach production' deal-breaker would have filtered both out.",
+    "All Databricks India openings this run were Staff or Senior only - no in-band roles exist there right now.",
+    "Google SWE III (L4) is the correct band for a 3-year SDE-II: minimum 2 years, preferred 3."
+  ]
+}

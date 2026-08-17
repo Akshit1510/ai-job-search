@@ -8,14 +8,26 @@ framework_version: 1.0.1
 
 Cover letters use a custom LaTeX document class (`cover.cls`) with Lato/Raleway fonts.
 
-**Output file:** `cover_letters/cover_<company>_<role>.tex`
+**Output file:** `out/applications/<company>_<role>/cover_<company>_<role>.tex` — **each application gets its own folder holding both its cover letter and its CV.** Never write one into `cover_letters/`, which holds only the template and the shared assets.
 **Compile with:** XeLaTeX (cover.cls requires fontspec)
-**Font directory:** `cover_letters/OpenFonts/fonts/`
+**Font directory:** `out/applications/<company>_<role>/OpenFonts/fonts/`
+
+### Why every application folder carries its own build assets
+
+Unlike the CV (moderncv is a system package), this template depends on two local files: the `cover.cls` class and the `OpenFonts/` tree. `\fontspec[Path = OpenFonts/fonts/raleway/]` resolves **relative to the compile directory**, and `cover.cls` must sit beside the `.tex`. Setting `TEXINPUTS` to point back at `cover_letters/` is unreliable on Windows MiKTeX through Git Bash, so each application folder keeps its own copy of both (~1.7 MB, gitignored). Keep the `Path = OpenFonts/fonts/raleway/` line exactly as-is — it is already correct for this layout.
+
+**Copy the assets in when you create the folder**, before the first compile:
+
+```bash
+mkdir -p out/applications/<company>_<role>
+cp cover_letters/cover.cls out/applications/<company>_<role>/
+cp -r cover_letters/OpenFonts out/applications/<company>_<role>/
+```
 
 ### Compile command
 
 ```bash
-cd cover_letters && xelatex -interaction=nonstopmode cover_<company>_<role>.tex
+cd out/applications/<company>_<role> && xelatex -interaction=nonstopmode cover_<company>_<role>.tex
 ```
 
 Expected output: `Output written on cover_<company>_<role>.pdf (1 page, ...)`. Any page count other than 1 is a failure that must be fixed before presenting to the user.
