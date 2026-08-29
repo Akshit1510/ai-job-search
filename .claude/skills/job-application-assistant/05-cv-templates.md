@@ -54,7 +54,7 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 \address{[YOUR_ADDRESS]}{}{}
 \phone[mobile]{[YOUR_PHONE]}
 \email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+\extrainfo{\href{[YOUR_LINKEDIN_URL]}{[YOUR_LINKEDIN_URL]} \quad \href{[YOUR_GITHUB_URL]}{[YOUR_GITHUB_URL]}}
 
 \begin{document}
 \makecvtitle
@@ -169,6 +169,9 @@ If there is a gap in your employment history:
 ### Evidence Links
 Wherever the CV names a verifiable artifact - a public project, a hackathon entry, a publication - carry its link (`\href`) so a reader can verify the claim in one click. A CV whose strongest claims are checkable reads as more credible everywhere else too.
 
+### LinkedIn/GitHub header links - show the full URL as visible text (user preference)
+The header's LinkedIn and GitHub links must display the **complete URL as the visible link text** (e.g. `\href{https://www.linkedin.com/in/akshitmaheshwari}{https://www.linkedin.com/in/akshitmaheshwari}`), never a bare anchor word like `{LinkedIn}` or `{GitHub}`. This is a standing user preference (confirmed 2026-08-26) and also fixes a real ATS gap already noted below: link text that isn't the URL itself is invisible to a parser that reads the text layer rather than following hyperlink targets. Apply this to every new CV, not just the master template.
+
 ### Honors and Awards
 - Keep format brief, one line each
 
@@ -217,7 +220,7 @@ cd out/applications/<company>_<role> && pdftotext -layout main_<company>_<role>.
 
 What to check in the extraction:
 
-- **Contact details as literal text.** The stock template's fontawesome contact icons extract as glyph names (`MOBILE-ALT`, `Envelope`) - harmless noise, because the actual address and number are printed beside them. The failure mode is a contact detail carried *only* by an icon or a hyperlink (like the `LinkedIn` link text, whose URL is not in the text layer): invisible to an ATS. The email address must always appear as printed text.
+- **Contact details as literal text.** The stock template's fontawesome contact icons extract as glyph names (`MOBILE-ALT`, `Envelope`) - harmless noise, because the actual address and number are printed beside them. The failure mode is a contact detail carried *only* by an icon or a hyperlink whose visible text is not the URL itself: invisible to an ATS. This is exactly why the LinkedIn/GitHub header links use the full URL as their visible text (see the rule above) rather than an anchor word like `LinkedIn`. The email address must always appear as printed text.
 - **No garbled output.** `(cid:NNN)` markers or `�` characters mean a font is embedded without a Unicode mapping - an ATS sees the same garbage. This shows up with unusual fonts in custom templates, not with the stock moderncv setup under lualatex.
 - **Reading order.** The stock banking style is single-column, so extraction order matches visual order. Custom templates (via `/add-template`) with sidebars or multi-column layouts can interleave unrelated lines; if extraction order is scrambled, the user is trading ATS compatibility for looks and should be told.
 - **Keyword coverage.** Match the posting's required/preferred terms against the extracted text, in the posting's language. Prefer the posting's exact term over a synonym when it is truthfully applicable - ATS matching is often literal. Never add a keyword the profile does not support.

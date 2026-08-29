@@ -5,7 +5,7 @@ description: >
   (LinkedIn, local job boards, and any skills added with /add-portal). Deduplicates
   across runs. Triggers on: job scrape, find jobs, search jobs, new jobs, job search,
   scrape jobs, /scrape
-allowed-tools: Read, Write, Edit, Glob, Grep, Bash(bun --version), Bash(bun run .agents/skills/*/cli/src/cli.ts *), WebFetch, WebSearch, Agent, AskUserQuestion
+allowed-tools: Read, Write, Edit, Glob, Grep, Bash(bun --version), Bash(bun run .agents/skills/*/cli/src/cli.ts *), Bash(D:/programming/pythonEnvs/ai-job-search/Scripts/python.exe scripts/export_jobs_xlsx.py *), WebFetch, WebSearch, Agent, AskUserQuestion
 ---
 
 # Job Scraper
@@ -225,9 +225,30 @@ If the user picks a number, invoke the **job-application-assistant** skill workf
 
 If the run found many new jobs (roughly 8+), also suggest `/rank` - it batch-scores all new postings against the full fit framework and returns a ranked shortlist, which beats eyeballing a long table. (`/rank` sets the `ranked` and `expired` status values in `seen_jobs.json`; treat both as already-seen for dedup purposes.)
 
+### Step 5.5: Export to Excel
+
+Always export this run's presented jobs to a workbook, without waiting to be asked - this is a standard part of every `/scrape` run, not an optional extra. Skip this step only if Step 5 presented zero new jobs.
+
+1. Build a run-report JSON matching the schema `scripts/export_jobs_xlsx.py` expects (see `job_scraper/run_reports/*.json` for worked examples). For each presented job, capture:
+   - `fit` ("High"/"Medium"/"Low", title-cased to match the exporter)
+   - `title`, `company`, `location`, `url`
+   - `location_tier` - "Tier 1", "Tier 2", "Tier 3", or "FAIL", per the Location Filter tiers in `search-queries.md`
+   - `posted` - recency signal (e.g. "within 14 days")
+   - `track` - "AI", "Backend", or "Both", per the two-track categories in `search-queries.md`
+   - `seniority` - the posted band vs. the target SDE-II band (e.g. "Senior - one level above band", "3-6 years stated - exact band match"); note explicit YOE floors so stretch roles are visible at a glance
+   - `notes` - 1-3 sentences: why it matches, key requirements to verify, and any red flags (mass-posting per Step 2.5, staffing-intermediary/body-shop signals, sub-band signals, experience-gap warnings) - reuse the same analysis already produced for the chat presentation and High-Match Highlights, don't redo it
+   - Top-level: `run_date` (today, `YYYY-MM-DD`), `focus`, `portals_run`, `portals_skipped` (with reasons), `portal_health` (from Step 4.75), and `observations` (cross-cutting patterns noticed this run - seniority inflation, body-shop prevalence, notable clusters)
+2. Save it to `job_scraper/run_reports/<run_date>.json`.
+3. Run the exporter with the project's dedicated venv (per `CLAUDE.md`, never the system Python):
+   ```bash
+   D:/programming/pythonEnvs/ai-job-search/Scripts/python.exe scripts/export_jobs_xlsx.py job_scraper/run_reports/<run_date>.json
+   ```
+   This writes `out/reports/job_findings_<run_date>.xlsx` (Findings / Highlights / Run Info sheets).
+4. Mention the output path in the Step 5 chat summary, e.g. "Exported to `out/reports/job_findings_2026-08-17.xlsx`."
+
 ### Step 6: Update Tracker (Optional)
 
-If the user decides to apply to any job, add a row to `job_search_tracker.csv`.
+If the user decides to apply to any job, add a row to `job_search_tracker.csv`. **Before adding, check the tracker for an existing row with the same company + role (case-insensitive, whitespace-trimmed) - never insert a duplicate row for a job that is already tracked.** If a matching row already exists, do not add a second one: tell the user a row already exists and, if they report a status change (e.g. moved from "applied" to "interview"), update that existing row in place rather than appending a new one. A job resurfacing in `seen_jobs.json` on a later `/scrape` run is not itself a reason to touch the tracker - only an explicit user decision to apply writes a tracker row.
 
 ---
 
@@ -242,3 +263,5 @@ If the user decides to apply to any job, add a row to `job_search_tracker.csv`.
 7. **No automated people lookups.** Referral contacts (Step 4.5) are LinkedIn search links only - never fetch or scrape LinkedIn people-search result pages programmatically.
 8. **Health checks are bounded and honest.** Step 4.75 spends at most one probe, one retry, and (in `health` mode) one detail fetch per portal - a diagnosis, not a crawl. A rate-limit is never evidence of breakage. Health verdicts come only from observed CLI output; a portal that could not be tested is reported as inconclusive, never guessed. The `enabled` toggle is the only thing the health check may edit, and only with confirmation.
 9. **Flag distribution patterns, never accuse.** The mass-posting signal (Step 2.5) describes how a listing is being distributed, not a claim that the employer is a scam. Never name a company as fraudulent or untrustworthy - present the observation and let the user decide.
+10. **Always export to Excel (Step 5.5).** Every run that presents new jobs also writes a run-report JSON and exports it to `out/reports/job_findings_<date>.xlsx` via `scripts/export_jobs_xlsx.py`, using the project venv at `D:/programming/pythonEnvs/ai-job-search/`. This is unconditional, not something the user needs to ask for each time.
+11. **Never duplicate tracker rows.** `job_search_tracker.csv` only grows on an explicit user decision to apply (Step 6), and every write checks for an existing company+role row first. A job merely resurfacing in `seen_jobs.json` - because it was seen on a prior run, or because `/rank` re-scored it - is never itself a reason to add or touch a tracker row. Scraping, ranking, and presenting jobs never writes to the tracker; only Step 6, on the user's word, does.

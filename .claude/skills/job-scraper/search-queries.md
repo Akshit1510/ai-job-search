@@ -130,7 +130,7 @@ Akshit's geography is intentionally wide. Grade rather than reject:
 
 - **Skip service/consultancy body-shops.** Staffing-style IT services, client-site deployment, and resource-augmentation roles are a recorded deal-breaker. Watch for: "deputation", "client location", "resource", "bench", "C2H", and staffing-agency postings that name no end client.
 - **Skip roles below the SDE-II band.** Graduate, trainee, junior, and SDE-I postings are a backwards step.
-- **Flag published salary bands below ~Rs. 25 LPA.** Most Indian postings hide compensation; only filter when a band is actually stated.
+- **Flag published salary bands below ~Rs. 26 LPA.** Most Indian postings hide compensation; only filter when a band is actually stated. When a posting is silent on salary, check indirectly - a quick web search against Glassdoor, AmbitionBox, Levels.fyi, or Naukri's salary insights for the company/role/level - before treating compensation as unknown; label anything found this way as an estimate, not a confirmed figure.
 - **Deprioritize pure support/maintenance roles** — L2/L3 production support, ticket-queue work, and legacy maintenance as the primary responsibility.
 - **Do not filter out a backend role for lacking AI.** Backend and AI are co-equal tracks. The absence of LLM/RAG content in an otherwise strong backend posting is not a mark against it. Filter on depth — scale, ownership, architecture — not on which of the two tracks the role sits on.
 

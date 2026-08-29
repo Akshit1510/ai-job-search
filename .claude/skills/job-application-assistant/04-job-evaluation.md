@@ -131,7 +131,7 @@ Akshit's search runs on **two tracks of equal weight: backend engineering depth 
 
 **Life situation alignment:**
 - **Security:** Currently employed and not under time pressure - can be selective and should be. A move must be a clear step up, not lateral.
-- **Compensation baseline:** Target band **Rs. 25-35 LPA**; treat offers materially below Rs. 25 LPA as a filter-out. Flag postings that publish a band below this. **Never surface compensation figures in a CV or cover letter.**
+- **Compensation baseline:** Target band **Rs. 26-35 LPA**; treat offers materially below Rs. 26 LPA as a filter-out. Flag postings that publish a band below this. **Never surface compensation figures in a CV or cover letter.** (Updated 2026-08-29 from the prior Rs. 25 LPA floor.)
 - **Flexibility:** No recorded family or schedule constraints. On-site, hybrid, and remote are all workable; relocation within India and internationally (with sponsorship) is on the table.
 - **Professional development:** Highest priority is production AI/LLM exposure plus senior mentorship. A role offering both can outweigh a moderate compensation difference; a role offering neither should score low on this dimension regardless of pay.
 
@@ -141,7 +141,7 @@ Akshit's search runs on **two tracks of equal weight: backend engineering depth 
 <!-- job_posting.md + outcome.md pairs exist, or incrementally by /outcome as results come in. -->
 No application history recorded yet.
 
-### 6. Salary Benchmark (Optional)
+### 6. Salary Benchmark
 
 If the salary lookup tool is configured (`salary_data.json` exists), look up the company:
 ```
@@ -149,6 +149,8 @@ python salary_lookup.py "<Company Name>" --json
 ```
 
 If a city is known from the posting, add `--city "<City>"` to narrow results.
+
+**If the tool is not configured, or returns no data for this company, fall back to a web search** rather than skipping the benchmark entirely: search for `"<Company Name>" salary <role/level> India` and check sites that publish crowdsourced compensation data (Glassdoor, AmbitionBox, Levels.fyi, Naukri's salary insights, Payscale). Treat anything found this way as an **indirect estimate**, not a confirmed figure - label it as such in the evaluation output, and note the source. Only skip the benchmark section entirely if neither the tool nor a web search surfaces anything usable.
 
 Present findings as:
 ```

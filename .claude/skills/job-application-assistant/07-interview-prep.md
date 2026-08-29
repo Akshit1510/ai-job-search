@@ -94,7 +94,7 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 > **Rules:** genuine, with a concrete mitigation. Avoid the humble-brag weaknesses ("I'm a perfectionist") - experienced interviewers discount them instantly.
 
 ### "What are your compensation expectations?"
-> Baseline is Rs. 25-35 LPA. Deflect first if it comes early: "I'd rather understand the role and scope before putting a number on it - what range has been budgeted?" If pressed, anchor at the upper end of your band and cite the AI + backend combination as the reason. Never volunteer your current salary unless required.
+> Baseline is Rs. 26-35 LPA (current ask: Rs. 26 LPA+). Deflect first if it comes early: "I'd rather understand the role and scope before putting a number on it - what range has been budgeted?" If pressed, anchor at the upper end of your band and cite the AI + backend combination as the reason. Never volunteer your current salary unless required.
 
 ### "Why this company specifically?"
 > Customize per company. Must reference: specific projects, company values, market position, or team structure. Never give a generic answer.

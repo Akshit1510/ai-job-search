@@ -34,7 +34,7 @@ Using the framework from `04-job-evaluation.md`, evaluate the job posting agains
 python salary_lookup.py "<Company Name>" --json
 ```
 
-If the posting specifies a city, add `--city "<City>"` to narrow results. Parse the JSON output and include the salary benchmark in the evaluation. If the tool is not configured or returns an error, skip the salary benchmark.
+If the posting specifies a city, add `--city "<City>"` to narrow results. Parse the JSON output and include the salary benchmark in the evaluation. If the tool is not configured or returns an error, fall back to a web search for the company/role/level against sites that publish crowdsourced compensation data (Glassdoor, AmbitionBox, Levels.fyi, Naukri salary insights, Payscale) before skipping the benchmark - label anything found this way as an indirect estimate, not a confirmed figure.
 
 Present the evaluation to the user with:
 

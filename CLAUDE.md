@@ -87,7 +87,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ### Deal-breakers
 - **Service/consultancy body-shops** - staffing-style IT services firms, client-site deployment, low-autonomy outsourced delivery roles
-- **Compensation below ~Rs. 25 LPA** - baseline for the current search (Rs. 25-35 LPA target band; never mention in any CV or cover letter)
+- **Compensation below ~Rs. 26 LPA** - baseline for the current search (Rs. 26-35 LPA target band; never mention in any CV or cover letter). Updated 2026-08-29 from the prior Rs. 25 LPA floor.
 - Roles where the direction is chronically unclear or the work is repeatedly thrown away
 - Roles that offer neither substantial backend engineering depth nor a path for AI/LLM work to reach production
 

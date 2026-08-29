@@ -88,7 +88,7 @@ The font wrapper is mandatory — if you just move `\begin{itemize}` outside `\l
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     TITLE NAME
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{}{\Huge{[YOUR_NAME]}}{  \href{mailto:[YOUR_EMAIL]}{[YOUR_EMAIL]} | [YOUR_PHONE] |  \urlstyle{same}\href{[YOUR_LINKEDIN_URL]}{LinkedIn}
+\namesection{}{\Huge{[YOUR_NAME]}}{  \href{mailto:[YOUR_EMAIL]}{[YOUR_EMAIL]} | [YOUR_PHONE] |  \urlstyle{same}\href{[YOUR_LINKEDIN_URL]}{[YOUR_LINKEDIN_URL]}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -125,11 +125,15 @@ The font wrapper is mandatory — if you just move `\begin{itemize}` outside `\l
 \end{document}
 ```
 
+### Known template pitfall: "--" does not render as an en-dash inside the Raleway-Medium bullet block
+
+Inside the `{\raggedright\fontspec[Path = OpenFonts/fonts/raleway/]{Raleway-Medium}...}` bullet wrapper, a literal `--` (e.g. `30--40\%`) sometimes prints as a literal double hyphen instead of collapsing to an en-dash, even though the identical `--` renders correctly as an en-dash in `\lettercontent{}` paragraphs and in the moderncv CV. Seen repeatedly (2026-08-26) across multiple drafts. **Always use `\textendash` explicitly for any number range inside a cover-letter bullet** (e.g. `30\textendash 40\%`, `\textasciitilde40\textendash 50\%`) rather than relying on `--` to convert automatically. Check the compiled PDF's bullet list specifically for this - it is easy to miss since the rest of the letter renders fine.
+
 ## Key Commands Reference
 
 | Command | Purpose |
 |---------|---------|
-| `\namesection{}{Name}{contact info}` | Header with name and contact |
+| `\namesection{}{Name}{contact info}` | Header with name and contact. LinkedIn (and GitHub, if included) must show the complete URL as the visible link text, e.g. `\href{https://www.linkedin.com/in/handle}{https://www.linkedin.com/in/handle}`, never a bare word like `LinkedIn` - user preference (2026-08-26), also closes the same ATS gap as the CV template (a link whose visible text isn't the URL is invisible to a text-layer parser). |
 | `\currentdate{date}` | Date field (use `\today` or explicit date) |
 | `\lettercontent{text}` | Body paragraph (adds spacing after) |
 | `\closing{text}` | Closing line |
