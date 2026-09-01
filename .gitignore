@@ -94,3 +94,6 @@ upskill/*.md
 # Restore with: cp cover_letters/cover.cls out/applications/<job>/ && cp -r cover_letters/OpenFonts out/applications/<job>/
 out/applications/*/OpenFonts/
 out/applications/*/cover.cls
+out/applications/*
+
+jobscraper/run_reports/*
